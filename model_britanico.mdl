@@ -745,7 +745,10 @@
 		    (object Class_Category "Actores del negocio"
 			quid       	"5B14149D02CC"
 			exportControl 	"Public"
-			logical_models 	(list unit_reference_list)
+			logical_models 	(list unit_reference_list
+			    (object Class "Alumno"
+				quid       	"5B14163100FF"
+				stereotype 	"Business Actor"))
 			logical_presentations 	(list unit_reference_list))
 		    (object Class_Category "Casos de uso del negocio"
 			quid       	"5B1414AD00D5"
@@ -5216,7 +5219,7 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"ClassPath"
-			value      	";C:\\Program Files (x86)\\Java\\jdk1.7.0_21\\jre\\lib\\rt.jar;C:\\Program Files (x86)\\Java\\jdk1.7.0_21\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.7.0_21\\lib\\tools.jar")
+			value      	";C:\\Program Files (x86)\\Java\\jdk1.8.0_161\\jre\\lib\\rt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_161\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_161\\lib\\tools.jar")
 		    (object Attribute
 			tool       	"Java"
 			name       	"EditorType"
