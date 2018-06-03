@@ -745,7 +745,16 @@
 		    (object Class_Category "Actores del negocio"
 			quid       	"5B14149D02CC"
 			exportControl 	"Public"
-			logical_models 	(list unit_reference_list)
+			logical_models 	(list unit_reference_list
+			    (object Class "Banco"
+				quid       	"5B1415F2032C"
+				stereotype 	"Business Actor")
+			    (object Class "SUNAT"
+				quid       	"5B141608014C"
+				stereotype 	"Business Actor")
+			    (object Class "Alumno"
+				quid       	"5B14161F02C4"
+				stereotype 	"Business Actor"))
 			logical_presentations 	(list unit_reference_list))
 		    (object Class_Category "Casos de uso del negocio"
 			quid       	"5B1414AD00D5"
@@ -827,18 +836,18 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@24
-			    location   	(189, 229)
+			    location   	(240, 236)
 			    fill_color 	13434879
 			    nlines     	2
-			    max_width  	390
+			    max_width  	288
 			    justify    	0
 			    label      	"Business Use-Case Model")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"35B677D701B8"
-			width      	403
-			height     	194)
+			width      	300
+			height     	180)
 		    (object ImportView "" @25
 			stereotype 	TRUE
 			line_color 	3342489
@@ -847,7 +856,7 @@
 			supplier   	@24
 			vertices   	(list Points
 			    (384, 718)
-			    (384, 417))
+			    (384, 410))
 			line_style 	0)
 		    (object AttachView "" @26
 			stereotype 	TRUE
@@ -855,7 +864,7 @@
 			client     	@25
 			supplier   	@23
 			vertices   	(list Points
-			    (384, 567)
+			    (384, 564)
 			    (800, 561))
 			line_style 	0)))))
     root_category 	(object Class_Category "Logical View"
