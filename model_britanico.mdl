@@ -746,7 +746,6 @@
 			quid       	"5B14149D02CC"
 			exportControl 	"Public"
 			logical_models 	(list unit_reference_list
-<<<<<<< HEAD
 			    (object Class "Banco"
 				quid       	"5B1415F2032C"
 				stereotype 	"Business Actor")
@@ -754,11 +753,7 @@
 				quid       	"5B141608014C"
 				stereotype 	"Business Actor")
 			    (object Class "Alumno"
-				quid       	"5B14161F02C4"
-=======
-			    (object Class "Alumno"
 				quid       	"5B14163100FF"
->>>>>>> 216efbc5966942f2a1ccf6d7d3c836fead6a4a3b
 				stereotype 	"Business Actor"))
 			logical_presentations 	(list unit_reference_list))
 		    (object Class_Category "Casos de uso del negocio"
