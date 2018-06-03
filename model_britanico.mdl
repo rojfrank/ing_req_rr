@@ -736,7 +736,13 @@
 					vertices   	(list Points
 					    (868, 976)
 					    (1154, 976))
-					line_style 	0))))))))
+					line_style 	0)))))))
+	    (object Class_Category "Modelos de caso de uso de negocio"
+		quid       	"5B14131F00DA"
+		stereotype 	"Business Use Case Model"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list)
+		logical_presentations 	(list unit_reference_list)))
 	logical_presentations 	(list unit_reference_list
 	    (object UseCaseDiagram "Main"
 		quid       	"35C6339B029F"
