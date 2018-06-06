@@ -218,7 +218,32 @@
 					fill_color 	13434879
 					quidu      	"5B1418390103"
 					width      	306)
-				    (object ClassView "Class" "Use Case View::Modelos de caso de uso de negocio::Actores del negocio::Alumno" @3
+				    (object UseCaseView "Use Case View::Modelos de caso de uso de negocio::Casos de uso del negocio::Realizar Matricula" @3
+					location   	(1104, 1072)
+					font       	(object Font
+					    size       	9
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@3
+					    location   	(1103, 1247)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	879
+					    justify    	0
+					    label      	"Realizar Matricula")
+					icon       	"Business Use Case"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"5B14183F001E"
+					width      	306)
+				    (object ClassView "Class" "Use Case View::Modelos de caso de uso de negocio::Actores del negocio::Alumno" @4
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -235,7 +260,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@3
+					    Parent_View 	@4
 					    location   	(255, 736)
 					    anchor_loc 	1
 					    nlines     	2
@@ -250,7 +275,7 @@
 					width      	202
 					annotation 	8
 					autoResize 	TRUE)
-				    (object AssociationViewNew "$UNNAMED$0" @4
+				    (object AssociationViewNew "$UNNAMED$0" @5
 					location   	(645, 367)
 					font       	(object Font
 					    size       	9
@@ -265,31 +290,31 @@
 					line_color 	3342489
 					quidu      	"5B14186C01DC"
 					roleview_list 	(list RoleViews
-					    (object RoleView "$UNNAMED$1" @5
-						Parent_View 	@4
+					    (object RoleView "$UNNAMED$1" @6
+						Parent_View 	@5
 						location   	(389, -161)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"5B14186D021D"
-						client     	@4
+						client     	@5
 						supplier   	@1
 						vertices   	(list Points
 						    (645, 367)
-						    (936, 250))
+						    (766, 319))
 						line_style 	0)
-					    (object RoleView "$UNNAMED$2" @6
-						Parent_View 	@4
+					    (object RoleView "$UNNAMED$2" @7
+						Parent_View 	@5
 						location   	(389, -161)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"5B14186D021F"
-						client     	@4
-						supplier   	@3
+						client     	@5
+						supplier   	@4
 						vertices   	(list Points
 						    (645, 367)
-						    (354, 484))
+						    (354, 483))
 						line_style 	0)))
-				    (object AssociationViewNew "$UNNAMED$3" @7
+				    (object AssociationViewNew "$UNNAMED$3" @8
 					location   	(652, 584)
 					font       	(object Font
 					    size       	9
@@ -304,55 +329,30 @@
 					line_color 	3342489
 					quidu      	"5B141870019F"
 					roleview_list 	(list RoleViews
-					    (object RoleView "$UNNAMED$4" @8
-						Parent_View 	@7
+					    (object RoleView "$UNNAMED$4" @9
+						Parent_View 	@8
 						location   	(396, 56)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"5B14187101F5"
-						client     	@7
+						client     	@8
 						supplier   	@2
 						vertices   	(list Points
 						    (652, 584)
-						    (950, 628))
+						    (952, 628))
 						line_style 	0)
-					    (object RoleView "$UNNAMED$5" @9
-						Parent_View 	@7
+					    (object RoleView "$UNNAMED$5" @10
+						Parent_View 	@8
 						location   	(396, 56)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"5B14187101F7"
-						client     	@7
-						supplier   	@3
+						client     	@8
+						supplier   	@4
 						vertices   	(list Points
 						    (652, 584)
 						    (354, 540))
 						line_style 	0)))
-				    (object UseCaseView "Use Case View::Modelos de caso de uso de negocio::Casos de uso del negocio::Realizar Matricula" @10
-					location   	(1104, 1072)
-					font       	(object Font
-					    size       	9
-					    face       	"Arial"
-					    bold       	FALSE
-					    italics    	FALSE
-					    underline  	FALSE
-					    strike     	FALSE
-					    color      	0
-					    default_color 	TRUE)
-					label      	(object ItemLabel
-					    Parent_View 	@10
-					    location   	(1103, 1247)
-					    anchor_loc 	1
-					    nlines     	2
-					    max_width  	879
-					    justify    	0
-					    label      	"Realizar Matricula")
-					icon       	"Business Use Case"
-					icon_style 	"Icon"
-					line_color 	3342489
-					fill_color 	13434879
-					quidu      	"5B14183F001E"
-					width      	306)
 				    (object AssociationViewNew "$UNNAMED$6" @11
 					location   	(656, 782)
 					font       	(object Font
@@ -375,7 +375,7 @@
 						line_color 	3342489
 						quidu      	"5B14188F00C5"
 						client     	@11
-						supplier   	@10
+						supplier   	@3
 						vertices   	(list Points
 						    (656, 782)
 						    (959, 977))
@@ -387,10 +387,10 @@
 						line_color 	3342489
 						quidu      	"5B14188F00C7"
 						client     	@11
-						supplier   	@3
+						supplier   	@4
 						vertices   	(list Points
 						    (656, 782)
-						    (354, 588))
+						    (354, 589))
 						line_style 	0))))))))
 		logical_presentations 	(list unit_reference_list)))
 	logical_presentations 	(list unit_reference_list
@@ -1074,6 +1074,44 @@
 			    (object UseCase "Realiza pago"
 				quid       	"5B1427CD0283"
 				stereotype 	"Business Use Case Realization")
+			    (object UseCase "Realizar inscripcion"
+				quid       	"5B17268602AF"
+				stereotype 	"Business Use Case Realization"
+				superclasses 	(list inheritance_relationship_list
+				    (object Inheritance_Relationship
+					quid       	"5B17268A0216"
+					supplier   	"Use Case View::Modelos de caso de uso de negocio::Casos de uso del negocio::Generar inscripcion"
+					quidu      	"5B1418180293"))
+				statemachine 	(object State_Machine "State/Activity Model"
+				    quid       	"5B17284D01A5"
+				    states     	(list States)
+				    partitions 	(list Partitions
+					(object Partition "NewSwimlane"
+					    quid       	"5B172856016E"
+					    persistence 	"Transient"
+					    creationObj 	FALSE
+					    multi      	FALSE))
+				    objects    	(list Objects)
+				    transitions 	(list transition_list)
+				    objectflows 	(list objectflow_list)
+				    statediagrams 	(list StateDiagrams
+					(object ActivityDiagram "Diagrama actividad (Inscripcion)"
+					    quid       	"5B17284D01A8"
+					    title      	"Diagrama actividad (Inscripcion)"
+					    zoom       	100
+					    max_height 	28350
+					    max_width  	21600
+					    origin_x   	0
+					    origin_y   	0
+					    items      	(list diagram_item_list
+						(object Swimlane "" @28
+						    location   	(450, 0)
+						    line_color 	3342489
+						    width      	450)
+						(object Swimlane "NewSwimlane" @29
+						    line_color 	3342489
+						    quidu      	"5B172856016E"
+						    width      	450))))))
 			    (object Association "$UNNAMED$15"
 				quid       	"5B142773025B"
 				roles      	(list role_list
@@ -1120,33 +1158,7 @@
 				origin_x   	0
 				origin_y   	0
 				items      	(list diagram_item_list
-				    (object UseCaseView "Logical View::Modelo de analisis de negocio::Realizacion de casos de uso del negocio::Genera inscripcion" @28
-					location   	(1504, 512)
-					font       	(object Font
-					    size       	9
-					    face       	"Arial"
-					    bold       	FALSE
-					    italics    	FALSE
-					    underline  	FALSE
-					    strike     	FALSE
-					    color      	0
-					    default_color 	TRUE)
-					label      	(object ItemLabel
-					    Parent_View 	@28
-					    location   	(1503, 688)
-					    anchor_loc 	1
-					    nlines     	2
-					    max_width  	879
-					    justify    	0
-					    label      	"Genera inscripcion")
-					icon       	"Business Use Case Realization"
-					icon_style 	"Icon"
-					line_color 	3342489
-					fill_color 	13434879
-					quidu      	"5B14279C004A"
-					width      	306
-					height     	194)
-				    (object UseCaseView "Use Case View::Modelos de caso de uso de negocio::Casos de uso del negocio::Generar inscripcion" @29
+				    (object UseCaseView "Use Case View::Modelos de caso de uso de negocio::Casos de uso del negocio::Generar inscripcion" @30
 					location   	(464, 512)
 					font       	(object Font
 					    size       	9
@@ -1158,7 +1170,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@29
+					    Parent_View 	@30
 					    location   	(463, 687)
 					    anchor_loc 	1
 					    nlines     	2
@@ -1170,8 +1182,8 @@
 					line_color 	3342489
 					fill_color 	13434879
 					quidu      	"5B1418180293")
-				    (object AssociationViewNew "$UNNAMED$18" @30
-					location   	(982, 512)
+				    (object UseCaseView "Logical View::Modelo de analisis de negocio::Realizacion de casos de uso del negocio::Realizar inscripcion" @31
+					location   	(1376, 496)
 					font       	(object Font
 					    size       	9
 					    face       	"Arial"
@@ -1181,34 +1193,30 @@
 					    strike     	FALSE
 					    color      	0
 					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@31
+					    location   	(1376, 496)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	270
+					    justify    	0
+					    label      	"Realizar inscripcion")
+					icon       	"Business Use Case Realization"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"5B17268602AF"
+					width      	314)
+				    (object InheritView "" @32
 					stereotype 	TRUE
 					line_color 	3342489
-					quidu      	"5B1427AF007A"
-					roleview_list 	(list RoleViews
-					    (object RoleView "$UNNAMED$19" @31
-						Parent_View 	@30
-						location   	(-474, 16)
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5B1427AF039C"
-						client     	@30
-						supplier   	@29
-						vertices   	(list Points
-						    (982, 512)
-						    (614, 512))
-						line_style 	0)
-					    (object RoleView "$UNNAMED$20" @32
-						Parent_View 	@30
-						location   	(-474, 16)
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5B1427AF039E"
-						client     	@30
-						supplier   	@28
-						vertices   	(list Points
-						    (982, 512)
-						    (1351, 512))
-						line_style 	0)))))
+					quidu      	"5B17268A0216"
+					client     	@31
+					supplier   	@30
+					vertices   	(list Points
+					    (1220, 497)
+					    (614, 507))
+					line_style 	0)))
 			    (object UseCaseDiagram "Diagrama de realizacion (Pago)"
 				quid       	"5B1425F702E8"
 				title      	"Diagrama de realizacion (Pago)"
@@ -1218,8 +1226,8 @@
 				origin_x   	0
 				origin_y   	0
 				items      	(list diagram_item_list
-				    (object UseCaseView "Logical View::Modelo de analisis de negocio::Realizacion de casos de uso del negocio::Realiza pago" @33
-					location   	(1616, 480)
+				    (object UseCaseView "Use Case View::Modelos de caso de uso de negocio::Casos de uso del negocio::Realizar pago" @33
+					location   	(720, 480)
 					font       	(object Font
 					    size       	9
 					    face       	"Arial"
@@ -1231,6 +1239,30 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@33
+					    location   	(719, 655)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	879
+					    justify    	0
+					    label      	"Realizar pago")
+					icon       	"Business Use Case"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"5B1418390103")
+				    (object UseCaseView "Logical View::Modelo de analisis de negocio::Realizacion de casos de uso del negocio::Realiza pago" @34
+					location   	(1616, 480)
+					font       	(object Font
+					    size       	9
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@34
 					    location   	(1615, 656)
 					    anchor_loc 	1
 					    nlines     	2
@@ -1244,30 +1276,6 @@
 					quidu      	"5B1427CD0283"
 					width      	306
 					height     	194)
-				    (object UseCaseView "Use Case View::Modelos de caso de uso de negocio::Casos de uso del negocio::Realizar pago" @34
-					location   	(720, 480)
-					font       	(object Font
-					    size       	9
-					    face       	"Arial"
-					    bold       	FALSE
-					    italics    	FALSE
-					    underline  	FALSE
-					    strike     	FALSE
-					    color      	0
-					    default_color 	TRUE)
-					label      	(object ItemLabel
-					    Parent_View 	@34
-					    location   	(719, 655)
-					    anchor_loc 	1
-					    nlines     	2
-					    max_width  	879
-					    justify    	0
-					    label      	"Realizar pago")
-					icon       	"Business Use Case"
-					icon_style 	"Icon"
-					line_color 	3342489
-					fill_color 	13434879
-					quidu      	"5B1418390103")
 				    (object AssociationViewNew "$UNNAMED$21" @35
 					location   	(1167, 480)
 					font       	(object Font
@@ -1290,7 +1298,7 @@
 						line_color 	3342489
 						quidu      	"5B1427DB03E4"
 						client     	@35
-						supplier   	@34
+						supplier   	@33
 						vertices   	(list Points
 						    (1167, 480)
 						    (870, 480))
@@ -1302,10 +1310,10 @@
 						line_color 	3342489
 						quidu      	"5B1427DB03E6"
 						client     	@35
-						supplier   	@33
+						supplier   	@34
 						vertices   	(list Points
 						    (1167, 480)
-						    (1464, 480))
+						    (1463, 480))
 						line_style 	0)))))
 			    (object UseCaseDiagram "Diagrama de realizacion (Matricula)"
 				quid       	"5B14260401F7"
@@ -1316,8 +1324,8 @@
 				origin_x   	0
 				origin_y   	0
 				items      	(list diagram_item_list
-				    (object UseCaseView "Logical View::Modelo de analisis de negocio::Realizacion de casos de uso del negocio::Realiza Matricula" @38
-					location   	(1600, 480)
+				    (object UseCaseView "Use Case View::Modelos de caso de uso de negocio::Casos de uso del negocio::Realizar Matricula" @38
+					location   	(576, 480)
 					font       	(object Font
 					    size       	9
 					    face       	"Arial"
@@ -1329,7 +1337,31 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@38
-					    location   	(1599, 656)
+					    location   	(575, 655)
+					    anchor_loc 	1
+					    nlines     	2
+					    max_width  	879
+					    justify    	0
+					    label      	"Realizar Matricula")
+					icon       	"Business Use Case"
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"5B14183F001E")
+				    (object UseCaseView "Logical View::Modelo de analisis de negocio::Realizacion de casos de uso del negocio::Realiza Matricula" @39
+					location   	(1600, 480)
+					font       	(object Font
+					    size       	9
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@39
+					    location   	(1600, 480)
 					    anchor_loc 	1
 					    nlines     	2
 					    max_width  	879
@@ -1342,30 +1374,6 @@
 					quidu      	"5B14272F032B"
 					width      	306
 					height     	194)
-				    (object UseCaseView "Use Case View::Modelos de caso de uso de negocio::Casos de uso del negocio::Realizar Matricula" @39
-					location   	(576, 480)
-					font       	(object Font
-					    size       	9
-					    face       	"Arial"
-					    bold       	FALSE
-					    italics    	FALSE
-					    underline  	FALSE
-					    strike     	FALSE
-					    color      	0
-					    default_color 	TRUE)
-					label      	(object ItemLabel
-					    Parent_View 	@39
-					    location   	(575, 655)
-					    anchor_loc 	1
-					    nlines     	2
-					    max_width  	879
-					    justify    	0
-					    label      	"Realizar Matricula")
-					icon       	"Business Use Case"
-					icon_style 	"Icon"
-					line_color 	3342489
-					fill_color 	13434879
-					quidu      	"5B14183F001E")
 				    (object AssociationViewNew "$UNNAMED$15" @40
 					location   	(1086, 480)
 					font       	(object Font
@@ -1388,7 +1396,7 @@
 						line_color 	3342489
 						quidu      	"5B1427740264"
 						client     	@40
-						supplier   	@39
+						supplier   	@38
 						vertices   	(list Points
 						    (1086, 480)
 						    (726, 480))
@@ -1400,10 +1408,10 @@
 						line_color 	3342489
 						quidu      	"5B1427740266"
 						client     	@40
-						supplier   	@38
+						supplier   	@39
 						vertices   	(list Points
 						    (1086, 480)
-						    (1446, 480))
+						    (1447, 480))
 						line_style 	0)))))))
 		    (object Class_Category "Trabajadores del negocio"
 			quid       	"5B141A4802DF"
@@ -1419,7 +1427,16 @@
 				quid       	"5B141ABE0071"
 				stereotype 	"Business Worker"))
 			logical_presentations 	(list unit_reference_list)))
-		logical_presentations 	(list unit_reference_list)))
+		logical_presentations 	(list unit_reference_list
+		    (object ClassDiagram "Diagrama clase de negocio (Inscripcion)"
+			quid       	"5B1727300262"
+			title      	"Diagrama clase de negocio (Inscripcion)"
+			zoom       	100
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list)))))
 	logical_presentations 	(list unit_reference_list
 	    (object ClassDiagram "Welcome"
 		quid       	"3512226B0028"
@@ -5103,7 +5120,7 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"ClassPath"
-			value      	";C:\\Program Files (x86)\\Java\\jdk1.7.0_21\\jre\\lib\\rt.jar;C:\\Program Files (x86)\\Java\\jdk1.7.0_21\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.7.0_21\\lib\\tools.jar")
+			value      	"")
 		    (object Attribute
 			tool       	"Java"
 			name       	"EditorType"
