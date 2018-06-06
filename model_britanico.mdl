@@ -136,9 +136,41 @@
 				stereotype 	"Business Use Case")
 			    (object UseCase "Realizar pago"
 				quid       	"5B1418390103"
+				documentation 	
+|Actor: Usuario
+|Proposito:
+|Pago de clase
+|
+|Flujo basico:
+|-----------------------
+|FB01. El caso de uso inicia cuando el alumno selecciona el metodo de pago entre banco o tarjeta de crédito
+|FB02. El sistema  informa al banco de la deuda
+|FB03. El usuario de cobranza confirma el pago de deuda y genera comprobante de venta que envía a Sunat
+|
+|Flujo alternativo:
+|-----------------------
+|FA01: El usuario de cobranza no confirma el pago y espera la confirmación
+|
+|
+				
 				stereotype 	"Business Use Case")
 			    (object UseCase "Realizar Matricula"
 				quid       	"5B14183F001E"
+				documentation 	
+|Actor: Usuario
+|Proposito:
+|Realizar matricula
+|
+|Flujo basico:
+|-----------------------
+|FB01. El caso de uso inicia cuando el alumno llena ficha de datos y lo entrega al cajero
+|FB02. El cajero recepciona la ficha y entrega la boleta de pago
+|FB03. El sistema genera la lista de asistencia que se le entrega al alumno
+|
+|Flujo alternativo:
+|-----------------------
+|FA01: El usuario de cobranza no confirma el pago y espera la confirmación
+				
 				stereotype 	"Business Use Case")
 			    (object Association "$UNNAMED$0"
 				quid       	"5B14186C01DC"
