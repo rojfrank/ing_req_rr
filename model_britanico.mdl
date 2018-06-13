@@ -155,20 +155,14 @@
 			    (object UseCase "Gestionar Documentos de Matricula"
 				quid       	"5B14183F001E"
 				documentation 	
+|Actor: Usuario
+|Propósito: Gestionar documento de matricula
 |
-|Actor: Cliente
-|Proposito:
-|Inscripción en Britanico
+|Flujo básico:
+|FB01. El caso de uso inicia cuando el alumno llena su solicitud de documento de matrícula y lo entrega al cajero
+|FB02. El cajero realiza la recepción de la solicitud y elabora la constancia de matrícula junto a la lista de asistencia.
+|FB03. El cajero el cajero entrega la boleta de pago al alumno 
 |
-|Flujo basico:
-|-----------------------
-|FB01. El caso de uso inicia cuando el alumno ingresa las credenciales de acceso
-|FB02. El alumno a la sección de autoservicios y elige la clase
-|FB03. El sistema registra la inscripción y genera el ticket de deuda
-|
-|Flujo alternativo:
-|-----------------------
-|FA01: Alumno ingresa credenciales incorrectas de acceso
 |FA02: El alumno solicita recuperación de contraseña
 |FA03: El alumno se comunica con Call Center de ayuda para el envío del correo
 				
@@ -1906,7 +1900,7 @@
 							location   	(800, 414)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	795
+							max_width  	802
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -1946,7 +1940,7 @@
 							location   	(1708, 1502)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	795
+							max_width  	802
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -1986,7 +1980,7 @@
 							location   	(2656, 1518)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	795
+							max_width  	802
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -2026,7 +2020,7 @@
 							location   	(1716, 2318)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	795
+							max_width  	802
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -2848,7 +2842,7 @@
 							location   	(963, 286)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	792
+							max_width  	799
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -2888,7 +2882,7 @@
 							location   	(1376, 1246)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	792
+							max_width  	799
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -3855,7 +3849,7 @@
 							location   	(688, 1678)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	792
+							max_width  	799
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -3905,7 +3899,7 @@
 							location   	(2704, 414)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	792
+							max_width  	799
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -3955,7 +3949,7 @@
 							location   	(3268, 638)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	792
+							max_width  	799
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -4292,7 +4286,7 @@
 						supplier   	@147
 						vertices   	(list Points
 						    (1086, 480)
-						    (1448, 480))
+						    (1446, 480))
 						line_style 	0)))))))
 		    (object Class_Category "Trabajadores del negocio"
 			quid       	"5B141A4802DF"
@@ -4312,11 +4306,11 @@
 		    (object ClassDiagram "Diagrama clase de negocio (Inscripcion)"
 			quid       	"5B1727300262"
 			title      	"Diagrama clase de negocio (Inscripcion)"
-			zoom       	100
+			zoom       	95
 			max_height 	28350
 			max_width  	21600
 			origin_x   	0
-			origin_y   	181
+			origin_y   	457
 			items      	(list diagram_item_list
 			    (object ClassView "Class" "Logical View::Modelo de analisis de negocio::Entidades del negocio::Correo de recuperacion de contraseña" @151
 				ShowCompartmentStereotypes 	TRUE
@@ -4430,7 +4424,7 @@
 					supplier   	@151
 					vertices   	(list Points
 					    (1058, 389)
-					    (1365, 384))
+					    (1368, 384))
 					line_style 	0)
 				    (object RoleView "$UNNAMED$37" @156
 					Parent_View 	@153
@@ -4442,7 +4436,7 @@
 					supplier   	@152
 					vertices   	(list Points
 					    (1058, 389)
-					    (752, 395))
+					    (752, 393))
 					line_style 	0)))
 			    (object ClassView "Class" "Logical View::Modelo de analisis de negocio::Entidades del negocio::Inscripcion de Clase" @157
 				ShowCompartmentStereotypes 	TRUE
@@ -4630,7 +4624,7 @@
 					supplier   	@157
 					vertices   	(list Points
 					    (1152, 1286)
-					    (1518, 1315))
+					    (1518, 1313))
 					line_style 	0)))
 			    (object AssociationViewNew "registra" @165
 				location   	(1152, 1024)
@@ -4678,7 +4672,7 @@
 					supplier   	@160
 					vertices   	(list Points
 					    (1152, 1024)
-					    (787, 1180))
+					    (787, 1181))
 					line_style 	0)
 				    (object RoleView "$UNNAMED$43" @168
 					Parent_View 	@165
@@ -4690,7 +4684,7 @@
 					supplier   	@158
 					vertices   	(list Points
 					    (1152, 1024)
-					    (1518, 869))
+					    (1518, 867))
 					line_style 	0)))
 			    (object AssociationViewNew "genera" @169
 				location   	(1091, 1578)
@@ -4738,7 +4732,7 @@
 					supplier   	@159
 					vertices   	(list Points
 					    (1091, 1578)
-					    (1396, 1801))
+					    (1396, 1802))
 					line_style 	0)
 				    (object RoleView "$UNNAMED$45" @172
 					Parent_View 	@169
@@ -4964,7 +4958,7 @@
 					supplier   	@177
 					vertices   	(list Points
 					    (720, 498)
-					    (868, 654))
+					    (869, 654))
 					line_style 	0)
 				    (object RoleView "$UNNAMED$16" @181
 					Parent_View 	@178
@@ -4976,7 +4970,7 @@
 					supplier   	@173
 					vertices   	(list Points
 					    (720, 498)
-					    (572, 342))
+					    (471, 236))
 					line_style 	0)))
 			    (object AssociationViewNew "genera" @182
 				location   	(1550, 806)
@@ -5024,7 +5018,7 @@
 					supplier   	@174
 					vertices   	(list Points
 					    (1550, 806)
-					    (1949, 812))
+					    (1950, 811))
 					line_style 	0)
 				    (object RoleView "$UNNAMED$18" @185
 					Parent_View 	@182
@@ -5036,7 +5030,7 @@
 					supplier   	@177
 					vertices   	(list Points
 					    (1550, 806)
-					    (1152, 800))
+					    (1152, 799))
 					line_style 	0)))
 			    (object AssociationViewNew "genera" @186
 				location   	(1550, 584)
@@ -5084,7 +5078,7 @@
 					supplier   	@175
 					vertices   	(list Points
 					    (1550, 584)
-					    (1949, 430))
+					    (1950, 430))
 					line_style 	0)
 				    (object RoleView "$UNNAMED$20" @189
 					Parent_View 	@186
@@ -5096,7 +5090,7 @@
 					supplier   	@177
 					vertices   	(list Points
 					    (1550, 584)
-					    (1152, 739))
+					    (1152, 737))
 					line_style 	0)))
 			    (object AssociationViewNew "entrega" @190
 				location   	(1247, 516)
@@ -5144,7 +5138,7 @@
 					supplier   	@176
 					vertices   	(list Points
 					    (1247, 516)
-					    (1367, 378))
+					    (1462, 259))
 					line_style 	0)
 				    (object RoleView "$UNNAMED$22" @193
 					Parent_View 	@190
@@ -5156,7 +5150,7 @@
 					supplier   	@177
 					vertices   	(list Points
 					    (1247, 516)
-					    (1128, 654))
+					    (1125, 654))
 					line_style 	0)))))
 		    (object ClassDiagram "Diagrama clase de negocio (Pago)"
 			quid       	"5B177583016A"
@@ -9197,7 +9191,7 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"ClassPath"
-			value      	"")
+			value      	";C:\\Program Files (x86)\\Java\\jdk1.8.0_161\\jre\\lib\\rt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_161\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_161\\lib\\tools.jar")
 		    (object Attribute
 			tool       	"Java"
 			name       	"EditorType"
