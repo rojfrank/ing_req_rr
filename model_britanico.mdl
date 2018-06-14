@@ -117,20 +117,26 @@
 				quid       	"5B1418180293"
 				documentation 	
 |Actor: Cliente
-|Proposito:
-|Inscripción en Britanico
-|
-|Flujo basico:
-|-----------------------
-|FB01. El caso de uso inicia cuando el alumno ingresa las credenciales de acceso
-|FB02. El alumno a la sección de autoservicios y elige la clase
-|FB03. El sistema registra la inscripción y genera el ticket de deuda
-|
-|Flujo alternativo:
-|-----------------------
+|Propósito: Inscripción en Británico
+|Flujo básico:
+|FB01. El caso de uso inicia cuando el alumno ingresa a la web de inscripción
+|FB02. El alumno ingresa sus credenciales y da clic en ingresar
+|FB03. El sistema verifica sus credenciales y si son correctas, permite ingresar al sistema
+|FB04. El usuario ingresa al sistema y elige la clase a matricularse
+|FB05. El sistema genera la inscripción en la clase
+|FB06. Al inscribirse, Al alumno se le genera un ticket de deuda para el pago de la clase inscrita
+|Flujo alternativo 01:
 |FA01: Alumno ingresa credenciales incorrectas de acceso
-|FA02: El alumno solicita recuperación de contraseña
-|FA03: El alumno se comunica con Call Center de ayuda para el envío del correo
+|FA02: El alumno solicita la recuperación de contraseña
+|FA03: El sistema le envía un correo de recuperación de contraseña
+|FA04: El alumno cambia su contraseña y vuelva al flujo FB02
+|Flujo alternativo 02:
+|FA01: Alumno no recibe la contraseña de recuperación
+|FA02: El alumno llama al Call Center para la recuperación de contraseña
+|FA03: El Call Center verifica sus datos y genera nueva contraseña y envia correo de recuperación
+|FA04: El alumno cambia su contraseña y vuelva al flujo FB02
+|
+|
 |
 				
 				stereotype 	"Business Use Case")
@@ -138,18 +144,18 @@
 				quid       	"5B1418390103"
 				documentation 	
 |Actor: Usuario
-|Proposito:
-|Pago de clase
-|
-|Flujo basico:
-|-----------------------
-|FB01. El caso de uso inicia cuando el alumno selecciona el metodo de pago entre banco o tarjeta de crédito
-|FB02. El sistema  informa al banco de la deuda
-|FB03. El usuario de cobranza confirma el pago de deuda y genera comprobante de venta que envía a Sunat
-|
+|Propósito: Realizar pago
+|Flujo básico:
+|FB01. El caso de uso inicia cuando el alumno selecciona el método de pago
+|FB02. El sistema  genera el recibo de pago 
+|FB03. El sistema envia información de deuda al banco
+|FB04. El banco actualiza estado de pago a cancelado
+|FB05. El usuario de cobranza confirma pago y registra el pago
+|FB06. El usuario de cobranza emite el comprobante de pago y lo envía a Sunat
 |Flujo alternativo:
-|-----------------------
-|FA01: El usuario de cobranza no confirma el pago y espera la confirmación
+|FA01: El usuario de cobranza no confirma el pago y vuelve a consultar en dos horas
+|
+|
 				
 				stereotype 	"Business Use Case")
 			    (object UseCase "Gestionar Documentos de Matricula"
@@ -157,14 +163,11 @@
 				documentation 	
 |Actor: Usuario
 |Propósito: Gestionar documento de matricula
-|
 |Flujo básico:
 |FB01. El caso de uso inicia cuando el alumno llena su solicitud de documento de matrícula y lo entrega al cajero
 |FB02. El cajero realiza la recepción de la solicitud y elabora la constancia de matrícula junto a la lista de asistencia.
 |FB03. El cajero el cajero entrega la boleta de pago al alumno 
 |
-|FA02: El alumno solicita recuperación de contraseña
-|FA03: El alumno se comunica con Call Center de ayuda para el envío del correo
 				
 				stereotype 	"Business Use Case")
 			    (object Association "$UNNAMED$0"
@@ -345,7 +348,7 @@
 						supplier   	@1
 						vertices   	(list Points
 						    (645, 367)
-						    (766, 319))
+						    (936, 250))
 						line_style 	0)
 					    (object RoleView "$UNNAMED$2" @7
 						Parent_View 	@5
@@ -357,7 +360,7 @@
 						supplier   	@4
 						vertices   	(list Points
 						    (645, 367)
-						    (354, 483))
+						    (354, 484))
 						line_style 	0)))
 				    (object AssociationViewNew "$UNNAMED$3" @8
 					location   	(652, 584)
@@ -384,7 +387,7 @@
 						supplier   	@2
 						vertices   	(list Points
 						    (652, 584)
-						    (952, 628))
+						    (950, 628))
 						line_style 	0)
 					    (object RoleView "$UNNAMED$5" @10
 						Parent_View 	@8
@@ -435,7 +438,7 @@
 						supplier   	@4
 						vertices   	(list Points
 						    (656, 782)
-						    (354, 589))
+						    (354, 588))
 						line_style 	0))))))))
 		logical_presentations 	(list unit_reference_list)))
 	logical_presentations 	(list unit_reference_list
@@ -1900,7 +1903,7 @@
 							location   	(800, 414)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	802
+							max_width  	808
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -1940,7 +1943,7 @@
 							location   	(1708, 1502)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	802
+							max_width  	808
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -1980,7 +1983,7 @@
 							location   	(2656, 1518)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	802
+							max_width  	808
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -2020,7 +2023,7 @@
 							location   	(1716, 2318)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	802
+							max_width  	808
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -2842,7 +2845,7 @@
 							location   	(963, 286)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	799
+							max_width  	805
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -2882,7 +2885,7 @@
 							location   	(1376, 1246)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	799
+							max_width  	805
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -3849,7 +3852,7 @@
 							location   	(688, 1678)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	799
+							max_width  	805
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -3899,7 +3902,7 @@
 							location   	(2704, 414)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	799
+							max_width  	805
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -3949,7 +3952,7 @@
 							location   	(3268, 638)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	799
+							max_width  	805
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -4286,7 +4289,7 @@
 						supplier   	@147
 						vertices   	(list Points
 						    (1086, 480)
-						    (1446, 480))
+						    (1448, 480))
 						line_style 	0)))))))
 		    (object Class_Category "Trabajadores del negocio"
 			quid       	"5B141A4802DF"
@@ -9191,7 +9194,7 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"ClassPath"
-			value      	";C:\\Program Files (x86)\\Java\\jdk1.8.0_161\\jre\\lib\\rt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_161\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_161\\lib\\tools.jar")
+			value      	";C:\\Program Files (x86)\\Java\\jdk1.7.0_79\\jre\\lib\\rt.jar;C:\\Program Files (x86)\\Java\\jdk1.7.0_79\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.7.0_79\\lib\\tools.jar")
 		    (object Attribute
 			tool       	"Java"
 			name       	"EditorType"
