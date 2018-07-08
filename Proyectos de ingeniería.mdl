@@ -1724,13 +1724,13 @@
 			max_height 	28350
 			max_width  	21600
 			origin_x   	0
-			origin_y   	0
+			origin_y   	625
 			items      	(list diagram_item_list
 			    (object ClassView "Class" "Logical View::Diagrama Conceptual::Interno" @45
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
-				location   	(160, 1664)
+				location   	(368, 1936)
 				font       	(object Font
 				    size       	9
 				    face       	"Arial"
@@ -1742,7 +1742,7 @@
 				    default_color 	TRUE)
 				label      	(object ItemLabel
 				    Parent_View 	@45
-				    location   	(160, 1820)
+				    location   	(368, 2092)
 				    anchor_loc 	1
 				    nlines     	2
 				    max_width  	446
@@ -1755,7 +1755,7 @@
 				quidu      	"5B3EE5E8026E"
 				compartment 	(object Compartment
 				    Parent_View 	@45
-				    location   	(72, 1858)
+				    location   	(281, 2130)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -1768,7 +1768,7 @@
 				    icon_style 	"Icon"
 				    anchor     	2
 				    nlines     	3
-				    max_width  	174
+				    max_width  	171
 				    justify    	0)
 				height     	154
 				annotation 	8
@@ -1802,7 +1802,7 @@
 				quidu      	"5B3EDA8E0341"
 				compartment 	(object Compartment
 				    Parent_View 	@46
-				    location   	(810, 355)
+				    location   	(810, 354)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -1815,7 +1815,7 @@
 				    icon_style 	"Icon"
 				    anchor     	2
 				    nlines     	4
-				    max_width  	257
+				    max_width  	250
 				    justify    	0)
 				height     	154
 				annotation 	8
@@ -1849,7 +1849,7 @@
 				quidu      	"5B3EDABF00B0"
 				compartment 	(object Compartment
 				    Parent_View 	@47
-				    location   	(7, 355)
+				    location   	(7, 354)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -1862,7 +1862,7 @@
 				    icon_style 	"Icon"
 				    anchor     	2
 				    nlines     	4
-				    max_width  	383
+				    max_width  	375
 				    justify    	0)
 				height     	154
 				annotation 	8
@@ -2016,7 +2016,7 @@
 				quidu      	"5B3EDB0A0193"
 				compartment 	(object Compartment
 				    Parent_View 	@54
-				    location   	(467, 1458)
+				    location   	(461, 1458)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -2029,7 +2029,7 @@
 				    icon_style 	"Icon"
 				    anchor     	2
 				    nlines     	4
-				    max_width  	247
+				    max_width  	243
 				    justify    	0)
 				height     	154
 				annotation 	8
@@ -2063,7 +2063,7 @@
 				quidu      	"5B3EED93000F"
 				compartment 	(object Compartment
 				    Parent_View 	@55
-				    location   	(491, 819)
+				    location   	(486, 818)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -2145,7 +2145,7 @@
 					supplier   	@54
 					vertices   	(list Points
 					    (592, 1047)
-					    (592, 1187))
+					    (592, 1188))
 					line_style 	0
 					label      	(object SegLabel @60
 					    Parent_View 	@59
@@ -2187,7 +2187,7 @@
 					supplier   	@55
 					vertices   	(list Points
 					    (592, 1047)
-					    (592, 908))
+					    (592, 803))
 					line_style 	0
 					label      	(object SegLabel @62
 					    Parent_View 	@61
@@ -2225,17 +2225,17 @@
 				client     	@45
 				supplier   	@54
 				vertices   	(list Points
-				    (238, 1587)
-				    (238, 1727))
+				    (367, 1859)
+				    (367, 1727))
 				line_style 	3
-				origin_attachment 	(238, 1587)
-				terminal_attachment 	(238, 1727)
+				origin_attachment 	(367, 1859)
+				terminal_attachment 	(367, 1727)
 				drawSupplier 	@63)
 			    (object ClassView "Class" "Logical View::Diagrama Conceptual::Empresa" @65
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
-				location   	(1472, 2160)
+				location   	(1456, 2016)
 				font       	(object Font
 				    size       	9
 				    face       	"Arial"
@@ -2247,7 +2247,7 @@
 				    default_color 	TRUE)
 				label      	(object ItemLabel
 				    Parent_View 	@65
-				    location   	(1472, 2316)
+				    location   	(1456, 2172)
 				    anchor_loc 	1
 				    nlines     	2
 				    max_width  	462
@@ -2260,7 +2260,7 @@
 				quidu      	"5B3EEB11022C"
 				compartment 	(object Compartment
 				    Parent_View 	@65
-				    location   	(1335, 2354)
+				    location   	(1321, 2210)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -2273,7 +2273,7 @@
 				    icon_style 	"Icon"
 				    anchor     	2
 				    nlines     	5
-				    max_width  	271
+				    max_width  	268
 				    justify    	0)
 				height     	154
 				annotation 	8
@@ -2282,7 +2282,7 @@
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
-				location   	(912, 1648)
+				location   	(768, 1968)
 				font       	(object Font
 				    size       	9
 				    face       	"Arial"
@@ -2294,7 +2294,7 @@
 				    default_color 	TRUE)
 				label      	(object ItemLabel
 				    Parent_View 	@66
-				    location   	(912, 1804)
+				    location   	(768, 2124)
 				    anchor_loc 	1
 				    nlines     	2
 				    max_width  	446
@@ -2307,7 +2307,7 @@
 				quidu      	"5B3EE2F2023A"
 				compartment 	(object Compartment
 				    Parent_View 	@66
-				    location   	(824, 1842)
+				    location   	(681, 2162)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -2320,7 +2320,7 @@
 				    icon_style 	"Icon"
 				    anchor     	2
 				    nlines     	2
-				    max_width  	174
+				    max_width  	171
 				    justify    	0)
 				height     	154
 				annotation 	8
@@ -2332,14 +2332,14 @@
 				client     	@66
 				supplier   	@54
 				vertices   	(list Points
-				    (912, 1725)
-				    (912, 1727))
+				    (837, 1891)
+				    (837, 1727))
 				line_style 	3
-				origin_attachment 	(912, 1725)
-				terminal_attachment 	(912, 1727)
+				origin_attachment 	(837, 1891)
+				terminal_attachment 	(837, 1727)
 				drawSupplier 	@63)
 			    (object AssociationViewNew "pertenece" @68
-				location   	(1190, 1901)
+				location   	(1111, 1989)
 				font       	(object Font
 				    size       	9
 				    face       	"Arial"
@@ -2351,7 +2351,7 @@
 				    default_color 	TRUE)
 				label      	(object SegLabel @69
 				    Parent_View 	@68
-				    location   	(1271, 1875)
+				    location   	(1192, 1963)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -2376,7 +2376,7 @@
 				roleview_list 	(list RoleViews
 				    (object RoleView "$UNNAMED$17" @70
 					Parent_View 	@68
-					location   	(278, 253)
+					location   	(199, 341)
 					font       	(object Font
 					    size       	9
 					    face       	"Arial"
@@ -2392,12 +2392,12 @@
 					client     	@68
 					supplier   	@65
 					vertices   	(list Points
-					    (1190, 1901)
-					    (1394, 2088))
+					    (1111, 1989)
+					    (1380, 2008))
 					line_style 	0
 					label      	(object SegLabel @71
 					    Parent_View 	@70
-					    location   	(1409, 2030)
+					    location   	(1356, 1953)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -2418,7 +2418,7 @@
 					    orientation 	0))
 				    (object RoleView "$UNNAMED$18" @72
 					Parent_View 	@68
-					location   	(278, 253)
+					location   	(199, 341)
 					font       	(object Font
 					    size       	9
 					    face       	"Arial"
@@ -2434,12 +2434,12 @@
 					client     	@68
 					supplier   	@66
 					vertices   	(list Points
-					    (1190, 1901)
-					    (986, 1715))
+					    (1111, 1989)
+					    (842, 1970))
 					line_style 	0
 					label      	(object SegLabel @73
 					    Parent_View 	@72
-					    location   	(1043, 1695)
+					    location   	(874, 1919)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -2487,7 +2487,7 @@
 				quidu      	"5B3EEEA702EE"
 				compartment 	(object Compartment
 				    Parent_View 	@74
-				    location   	(1228, 1250)
+				    location   	(1221, 1250)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -2500,7 +2500,7 @@
 				    icon_style 	"Icon"
 				    anchor     	2
 				    nlines     	4
-				    max_width  	230
+				    max_width  	226
 				    justify    	0)
 				height     	154
 				annotation 	8
@@ -2543,7 +2543,7 @@
 				quidu      	"5B3EE6FD01BB"
 				compartment 	(object Compartment
 				    Parent_View 	@76
-				    location   	(1914, 2003)
+				    location   	(1914, 2002)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -2556,7 +2556,7 @@
 				    icon_style 	"Icon"
 				    anchor     	2
 				    nlines     	3
-				    max_width  	244
+				    max_width  	237
 				    justify    	0)
 				height     	154
 				annotation 	8
@@ -2620,7 +2620,7 @@
 				quidu      	"5B3EE6A302EC"
 				compartment 	(object Compartment
 				    Parent_View 	@78
-				    location   	(1872, 1251)
+				    location   	(1868, 1250)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -2633,7 +2633,7 @@
 				    icon_style 	"Icon"
 				    anchor     	2
 				    nlines     	5
-				    max_width  	372
+				    max_width  	365
 				    justify    	0)
 				height     	154
 				annotation 	8
@@ -2693,7 +2693,7 @@
 					supplier   	@78
 					vertices   	(list Points
 					    (1703, 1056)
-					    (1988, 1056))
+					    (1987, 1056))
 					line_style 	0
 					label      	(object SegLabel @82
 					    Parent_View 	@81
@@ -2813,7 +2813,7 @@
 					supplier   	@76
 					vertices   	(list Points
 					    (2049, 1607)
-					    (2048, 1730))
+					    (2048, 1732))
 					line_style 	0
 					label      	(object SegLabel @88
 					    Parent_View 	@87
@@ -2855,7 +2855,7 @@
 					supplier   	@78
 					vertices   	(list Points
 					    (2049, 1607)
-					    (2051, 1485))
+					    (2056, 1235))
 					line_style 	0
 					label      	(object SegLabel @90
 					    Parent_View 	@89
@@ -2933,7 +2933,7 @@
 					supplier   	@77
 					vertices   	(list Points
 					    (2055, 778)
-					    (2051, 579))
+					    (2050, 579))
 					line_style 	0
 					label      	(object SegLabel @94
 					    Parent_View 	@93
@@ -2975,7 +2975,7 @@
 					supplier   	@78
 					vertices   	(list Points
 					    (2055, 778)
-					    (2060, 978))
+					    (2059, 980))
 					line_style 	0
 					label      	(object SegLabel @96
 					    Parent_View 	@95
@@ -6681,7 +6681,7 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"ClassPath"
-			value      	";C:\\Program Files (x86)\\Java\\jdk1.8.0_161\\jre\\lib\\rt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_161\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_161\\lib\\tools.jar")
+			value      	"")
 		    (object Attribute
 			tool       	"Java"
 			name       	"EditorType"
