@@ -244,71 +244,252 @@
 			    (object Class_Category "Seguridad"
 				quid       	"5B458DB30115"
 				exportControl 	"Public"
-				logical_models 	(list unit_reference_list)
-				logical_presentations 	(list unit_reference_list))
-			    (object Class_Category "Gestion de Matricula"
-				quid       	"5B45901101AC"
-				visible_categories 	(list visibility_relationship_list
-				    (object Visibility_Relationship
-					quid       	"5B4593AA01CE"
-					supplier   	"Use Case View::Use-Case Model::Actors::Seguridad"
-					quidu      	"5B458DB30115")
-				    (object Visibility_Relationship
-					quid       	"5B4593D50026"
-					supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Documentos Post-Matricula"
-					quidu      	"5B45915F0293")
-				    (object Visibility_Relationship
-					quid       	"5B4593DA0310"
-					supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago"
-					quidu      	"5B45901C00EF"))
-				exportControl 	"Public"
 				logical_models 	(list unit_reference_list
-				    (object UseCase "Consulta Clase"
-					quid       	"5B45949A0289"
+				    (object UseCase "Realiza Login"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
+					quid       	"5B45A0C90174")
+				    (object UseCase "Cambia Contraseña"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
+					quid       	"5B45A0FC0355")
+				    (object UseCase "Gestiona Perfiles"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
+					quid       	"5B45A110037D")
+				    (object UseCase "Realiza Copias de Seguridad"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
+					quid       	"5B45A12E0283"
 					visible_modules 	(list dependency_list
 					    (object Dependency_Relationship
-						quid       	"5B4595950382"
-						stereotype 	"extend"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Matricula::Registra Inscripción"
-						quidu      	"5B45950102EA")))
-				    (object UseCase "Registra Inscripción"
-					quid       	"5B45950102EA")
+						quid       	"5B45A18100D4"
+						stereotype 	"include"
+						supplier   	"Use Case View::Use-Case Model::Actors::Seguridad::Restura Copia de Seguridad"
+						quidu      	"5B45A1380301")))
+				    (object UseCase "Restura Copia de Seguridad"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
+					quid       	"5B45A1380301")
 				    (object Association "$UNNAMED$0"
-					quid       	"5B45958D0080"
+					quid       	"5B45A15F00DB"
 					roles      	(list role_list
 					    (object Role "$UNNAMED$1"
-						quid       	"5B45958D02A3"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Matricula::Consulta Clase"
-						quidu      	"5B45949A0289"
+						quid       	"5B45A15F0335"
+						supplier   	"Use Case View::Use-Case Model::Actors::Seguridad::Realiza Login"
+						quidu      	"5B45A0C90174"
 						is_navigable 	TRUE)
 					    (object Role "$UNNAMED$2"
-						quid       	"5B45958D02A6"
-						supplier   	"Use Case View::Use-Case Model::Actors::Alumno"
-						quidu      	"5B458BF603B8")))
+						quid       	"5B45A15F0337"
+						supplier   	"Use Case View::Use-Case Model::Actors::Usuario"
+						quidu      	"5B458CA3039B")))
 				    (object Association "$UNNAMED$3"
-					quid       	"5B45958F030C"
+					quid       	"5B45A161038C"
 					roles      	(list role_list
 					    (object Role "$UNNAMED$4"
-						quid       	"5B4595900155"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Matricula::Registra Inscripción"
-						quidu      	"5B45950102EA"
+						quid       	"5B45A162018C"
+						supplier   	"Use Case View::Use-Case Model::Actors::Seguridad::Cambia Contraseña"
+						quidu      	"5B45A0FC0355"
 						is_navigable 	TRUE)
 					    (object Role "$UNNAMED$5"
-						quid       	"5B4595900158"
-						supplier   	"Use Case View::Use-Case Model::Actors::Alumno"
-						quidu      	"5B458BF603B8"))))
+						quid       	"5B45A162018E"
+						supplier   	"Use Case View::Use-Case Model::Actors::Usuario"
+						quidu      	"5B458CA3039B")))
+				    (object Association "$UNNAMED$6"
+					quid       	"5B45A16902A7"
+					roles      	(list role_list
+					    (object Role "$UNNAMED$7"
+						quid       	"5B45A16A00AD"
+						supplier   	"Use Case View::Use-Case Model::Actors::Seguridad::Gestiona Perfiles"
+						quidu      	"5B45A110037D"
+						is_navigable 	TRUE)
+					    (object Role "$UNNAMED$8"
+						quid       	"5B45A16A00AF"
+						supplier   	"Use Case View::Use-Case Model::Actors::Administrador del Sistema"
+						quidu      	"5B458C16016D")))
+				    (object Association "$UNNAMED$9"
+					quid       	"5B45A16B0309"
+					roles      	(list role_list
+					    (object Role "$UNNAMED$10"
+						quid       	"5B45A16C013D"
+						supplier   	"Use Case View::Use-Case Model::Actors::Seguridad::Realiza Copias de Seguridad"
+						quidu      	"5B45A12E0283"
+						is_navigable 	TRUE)
+					    (object Role "$UNNAMED$11"
+						quid       	"5B45A16C013F"
+						supplier   	"Use Case View::Use-Case Model::Actors::Administrador del Sistema"
+						quidu      	"5B458C16016D")))
+				    (object Association "$UNNAMED$12"
+					quid       	"5B45A16D03A2"
+					roles      	(list role_list
+					    (object Role "$UNNAMED$13"
+						quid       	"5B45A16E024D"
+						supplier   	"Use Case View::Use-Case Model::Actors::Seguridad::Restura Copia de Seguridad"
+						quidu      	"5B45A1380301"
+						is_navigable 	TRUE)
+					    (object Role "$UNNAMED$14"
+						quid       	"5B45A16E024F"
+						supplier   	"Use Case View::Use-Case Model::Actors::Administrador del Sistema"
+						quidu      	"5B458C16016D")))
+				    (object Association "$UNNAMED$15"
+					quid       	"5B45A1C300DC"
+					roles      	(list role_list
+					    (object Role "$UNNAMED$16"
+						quid       	"5B45A1C30315"
+						supplier   	"Use Case View::Use-Case Model::Actors::Seguridad::Cambia Contraseña"
+						quidu      	"5B45A0FC0355"
+						is_navigable 	TRUE)
+					    (object Role "$UNNAMED$17"
+						quid       	"5B45A1C30317"
+						supplier   	"Use Case View::Use-Case Model::Actors::Agente Call Center"
+						quidu      	"5B458C07017C"))))
 				logical_presentations 	(list unit_reference_list
-				    (object UseCaseDiagram "Diagrama de Gestion de Matricula"
-					quid       	"5B459402004F"
-					title      	"Diagrama de Gestion de Matricula"
+				    (object UseCaseDiagram "Seguridad"
+					quid       	"5B45A04D0151"
+					title      	"Seguridad"
 					zoom       	100
 					max_height 	28350
 					max_width  	21600
 					origin_x   	0
 					origin_y   	0
 					items      	(list diagram_item_list
-					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Matricula::Consulta Clase" @3
-						location   	(448, 192)
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Seguridad::Realiza Login" @3
+						location   	(752, 272)
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -320,6 +501,722 @@
 						    default_color 	TRUE)
 						label      	(object ItemLabel
 						    Parent_View 	@3
+						    location   	(752, 410)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	630
+						    justify    	0
+						    label      	"Realiza Login")
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"5B45A0C90174"
+						height     	118)
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Seguridad::Gestiona Perfiles" @4
+						location   	(1328, 240)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@4
+						    location   	(1328, 378)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	630
+						    justify    	0
+						    label      	"Gestiona Perfiles")
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"5B45A110037D"
+						height     	118)
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Seguridad::Realiza Copias de Seguridad" @5
+						location   	(1248, 720)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@5
+						    location   	(1248, 858)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	630
+						    justify    	0
+						    label      	"Realiza Copias de Seguridad")
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"5B45A12E0283"
+						height     	118)
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Seguridad::Restura Copia de Seguridad" @6
+						location   	(1520, 1344)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@6
+						    location   	(1520, 1482)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	630
+						    justify    	0
+						    label      	"Restura Copia de Seguridad")
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"5B45A1380301"
+						height     	118)
+					    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Administrador del Sistema" @7
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(1728, 496)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@7
+						    location   	(1728, 656)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	325
+						    justify    	0
+						    label      	"Administrador del Sistema")
+						icon       	"Actor"
+						icon_style 	"Icon"
+						line_color 	3342489
+						quidu      	"5B458C16016D"
+						annotation 	8
+						autoResize 	TRUE)
+					    (object AssociationViewNew "$UNNAMED$6" @8
+						location   	(1574, 395)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"5B45A16902A7"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$7" @9
+							Parent_View 	@8
+							location   	(-154, -101)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"5B45A16A00AD"
+							client     	@8
+							supplier   	@4
+							vertices   	(list Points
+							    (1574, 395)
+							    (1328, 240))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$8" @10
+							Parent_View 	@8
+							location   	(-154, -101)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"5B45A16A00AF"
+							client     	@8
+							supplier   	@7
+							vertices   	(list Points
+							    (1574, 395)
+							    (1667, 455))
+							line_style 	0)))
+					    (object AssociationViewNew "$UNNAMED$9" @11
+						location   	(1425, 635)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"5B45A16B0309"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$10" @12
+							Parent_View 	@11
+							location   	(-303, 139)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"5B45A16C013D"
+							client     	@11
+							supplier   	@5
+							vertices   	(list Points
+							    (1425, 635)
+							    (1356, 664))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$11" @13
+							Parent_View 	@11
+							location   	(-303, 139)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"5B45A16C013F"
+							client     	@11
+							supplier   	@7
+							vertices   	(list Points
+							    (1425, 635)
+							    (1669, 520))
+							line_style 	0)))
+					    (object AssociationViewNew "$UNNAMED$12" @14
+						location   	(1601, 1003)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"5B45A16D03A2"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$13" @15
+							Parent_View 	@14
+							location   	(-127, 507)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"5B45A16E024D"
+							client     	@14
+							supplier   	@6
+							vertices   	(list Points
+							    (1601, 1003)
+							    (1531, 1286))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$14" @16
+							Parent_View 	@14
+							location   	(-127, 507)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"5B45A16E024F"
+							client     	@14
+							supplier   	@7
+							vertices   	(list Points
+							    (1601, 1003)
+							    (1680, 679))
+							line_style 	0)))
+					    (object DependencyView "" @17
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						stereotype 	(object SegLabel @18
+						    Parent_View 	@17
+						    location   	(1309, 1114)
+						    font       	(object Font
+							size       	9
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    anchor     	10
+						    anchor_loc 	1
+						    nlines     	1
+						    max_width  	450
+						    justify    	0
+						    label      	"<<include>>"
+						    pctDist    	0.479586
+						    height     	101
+						    orientation 	1)
+						line_color 	3342489
+						quidu      	"5B45A18100D4"
+						client     	@5
+						supplier   	@6
+						vertices   	(list Points
+						    (1317, 881)
+						    (1493, 1285))
+						line_style 	0)
+					    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Usuario" @19
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(240, 528)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@19
+						    location   	(240, 688)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	325
+						    justify    	0
+						    label      	"Usuario")
+						icon       	"Actor"
+						icon_style 	"Icon"
+						line_color 	3342489
+						quidu      	"5B458CA3039B"
+						annotation 	8
+						autoResize 	TRUE)
+					    (object AssociationViewNew "$UNNAMED$0" @20
+						location   	(463, 413)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"5B45A15F00DB"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$1" @21
+							Parent_View 	@20
+							location   	(223, -115)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"5B45A15F0335"
+							client     	@20
+							supplier   	@3
+							vertices   	(list Points
+							    (463, 413)
+							    (752, 272))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$2" @22
+							Parent_View 	@20
+							location   	(223, -115)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"5B45A15F0337"
+							client     	@20
+							supplier   	@19
+							vertices   	(list Points
+							    (463, 413)
+							    (297, 495))
+							line_style 	0)))
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Seguridad::Cambia Contraseña" @23
+						location   	(704, 672)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@23
+						    location   	(704, 810)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	630
+						    justify    	0
+						    label      	"Cambia Contraseña")
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"5B45A0FC0355"
+						height     	118)
+					    (object AssociationViewNew "$UNNAMED$3" @24
+						location   	(445, 590)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"5B45A161038C"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$4" @25
+							Parent_View 	@24
+							location   	(205, 62)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"5B45A162018C"
+							client     	@24
+							supplier   	@23
+							vertices   	(list Points
+							    (445, 590)
+							    (592, 632))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$5" @26
+							Parent_View 	@24
+							location   	(205, 62)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"5B45A162018E"
+							client     	@24
+							supplier   	@19
+							vertices   	(list Points
+							    (445, 590)
+							    (297, 543))
+							line_style 	0)))
+					    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Agente Call Center" @27
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(400, 1248)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@27
+						    location   	(400, 1408)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	325
+						    justify    	0
+						    label      	"Agente Call Center")
+						icon       	"Actor"
+						icon_style 	"Icon"
+						line_color 	3342489
+						quidu      	"5B458C07017C"
+						annotation 	8
+						autoResize 	TRUE)
+					    (object AssociationViewNew "$UNNAMED$15" @28
+						location   	(525, 1000)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"5B45A1C300DC"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$16" @29
+							Parent_View 	@28
+							location   	(125, -248)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"5B45A1C30315"
+							client     	@28
+							supplier   	@23
+							vertices   	(list Points
+							    (525, 1000)
+							    (613, 833))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$17" @30
+							Parent_View 	@28
+							location   	(125, -248)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"5B45A1C30317"
+							client     	@28
+							supplier   	@27
+							vertices   	(list Points
+							    (525, 1000)
+							    (438, 1166))
+							line_style 	0)))))))
+			    (object Class_Category "Gestion de Matricula"
+				quid       	"5B45901101AC"
+				visible_categories 	(list visibility_relationship_list
+				    (object Visibility_Relationship
+					quid       	"5B4593AA01CE"
+					supplier   	"Use Case View::Use-Case Model::Actors::Seguridad"
+					quidu      	"5B458DB30115")
+				    (object Visibility_Relationship
+					quid       	"5B4593D50026"
+					supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Procesos Documentarios"
+					quidu      	"5B45915F0293")
+				    (object Visibility_Relationship
+					quid       	"5B4593DA0310"
+					supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago"
+					quidu      	"5B45901C00EF"))
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list
+				    (object UseCase "Consulta Clase"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
+					quid       	"5B45949A0289"
+					visible_modules 	(list dependency_list
+					    (object Dependency_Relationship
+						quid       	"5B4595950382"
+						stereotype 	"extend"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Matricula::Registra Inscripción"
+						quidu      	"5B45950102EA")))
+				    (object UseCase "Registra Inscripción"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
+					quid       	"5B45950102EA"
+					visible_modules 	(list dependency_list
+					    (object Dependency_Relationship
+						quid       	"5B46B39B028D"
+						stereotype 	"include"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Matricula::Genera ticket de deuda"
+						quidu      	"5B46B22B009D")
+					    (object Dependency_Relationship
+						quid       	"5B46B6240042"
+						stereotype 	"include"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Actualizar estado de Inscripcion"
+						quidu      	"5B46B588032B")))
+				    (object UseCase "Genera ticket de deuda"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
+					quid       	"5B46B22B009D")
+				    (object UseCase "Consulta Inscripcion"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
+					quid       	"5B46B51503E6"
+					visible_modules 	(list dependency_list
+					    (object Dependency_Relationship
+						quid       	"5B46B52A006A"
+						stereotype 	"extend"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Matricula::Registra Inscripción"
+						quidu      	"5B45950102EA")
+					    (object Dependency_Relationship
+						quid       	"5B46C7DA0262"
+						stereotype 	"extend"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Actualizar estado de Inscripcion"
+						quidu      	"5B46B588032B")))
+				    (object Association "$UNNAMED$18"
+					quid       	"5B45958D0080"
+					roles      	(list role_list
+					    (object Role "$UNNAMED$19"
+						quid       	"5B45958D02A3"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Matricula::Consulta Clase"
+						quidu      	"5B45949A0289"
+						is_navigable 	TRUE)
+					    (object Role "$UNNAMED$20"
+						quid       	"5B45958D02A6"
+						supplier   	"Use Case View::Use-Case Model::Actors::Alumno"
+						quidu      	"5B458BF603B8")))
+				    (object Association "$UNNAMED$21"
+					quid       	"5B45958F030C"
+					roles      	(list role_list
+					    (object Role "$UNNAMED$22"
+						quid       	"5B4595900155"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Matricula::Registra Inscripción"
+						quidu      	"5B45950102EA"
+						is_navigable 	TRUE)
+					    (object Role "$UNNAMED$23"
+						quid       	"5B4595900158"
+						supplier   	"Use Case View::Use-Case Model::Actors::Alumno"
+						quidu      	"5B458BF603B8")))
+				    (object Association "$UNNAMED$24"
+					quid       	"5B46B2BD00C2"
+					roles      	(list role_list
+					    (object Role "$UNNAMED$25"
+						quid       	"5B46B2BD030E"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Matricula::Genera ticket de deuda"
+						quidu      	"5B46B22B009D"
+						is_navigable 	TRUE)
+					    (object Role "$UNNAMED$26"
+						quid       	"5B46B2BD0310"
+						supplier   	"Use Case View::Use-Case Model::Actors::Sistema"
+						quidu      	"5B45953D0039")))
+				    (object Association "$UNNAMED$27"
+					quid       	"5B46B5240017"
+					roles      	(list role_list
+					    (object Role "$UNNAMED$28"
+						quid       	"5B46B52402B1"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Matricula::Consulta Inscripcion"
+						quidu      	"5B46B51503E6"
+						is_navigable 	TRUE)
+					    (object Role "$UNNAMED$29"
+						quid       	"5B46B52402B3"
+						supplier   	"Use Case View::Use-Case Model::Actors::Alumno"
+						quidu      	"5B458BF603B8")))
+				    (object Association "$UNNAMED$30"
+					quid       	"5B46C7CA03D0"
+					roles      	(list role_list
+					    (object Role "$UNNAMED$31"
+						quid       	"5B46C7CB03E4"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Actualizar estado de Inscripcion"
+						quidu      	"5B46B588032B"
+						is_navigable 	TRUE)
+					    (object Role "$UNNAMED$32"
+						quid       	"5B46C7CB03E6"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Matricula::Registra Inscripción"
+						quidu      	"5B45950102EA"))))
+				logical_presentations 	(list unit_reference_list
+				    (object UseCaseDiagram "Diagrama de Gestion de Matricula"
+					quid       	"5B459402004F"
+					title      	"Diagrama de Gestion de Matricula"
+					zoom       	100
+					max_height 	28350
+					max_width  	21600
+					origin_x   	0
+					origin_y   	0
+					items      	(list diagram_item_list
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Matricula::Consulta Clase" @31
+						location   	(448, 192)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@31
 						    location   	(448, 330)
 						    anchor_loc 	1
 						    nlines     	2
@@ -331,7 +1228,31 @@
 						fill_color 	13434879
 						quidu      	"5B45949A0289"
 						height     	118)
-					    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Alumno" @4
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Matricula::Genera ticket de deuda" @32
+						location   	(1408, 768)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@32
+						    location   	(1408, 906)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	630
+						    justify    	0
+						    label      	"Genera ticket de deuda")
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"5B46B22B009D"
+						height     	118)
+					    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Alumno" @33
 						ShowCompartmentStereotypes 	TRUE
 						IncludeAttribute 	TRUE
 						IncludeOperation 	TRUE
@@ -346,11 +1267,11 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@4
+						    Parent_View 	@33
 						    location   	(224, 832)
 						    anchor_loc 	1
 						    nlines     	2
-						    max_width  	471
+						    max_width  	325
 						    justify    	0
 						    label      	"Alumno")
 						icon       	"Actor"
@@ -359,7 +1280,7 @@
 						quidu      	"5B458BF603B8"
 						annotation 	8
 						autoResize 	TRUE)
-					    (object AssociationViewNew "$UNNAMED$0" @5
+					    (object AssociationViewNew "$UNNAMED$18" @34
 						location   	(313, 472)
 						font       	(object Font
 						    size       	9
@@ -374,31 +1295,161 @@
 						line_color 	3342489
 						quidu      	"5B45958D0080"
 						roleview_list 	(list RoleViews
-						    (object RoleView "$UNNAMED$1" @6
-							Parent_View 	@5
+						    (object RoleView "$UNNAMED$19" @35
+							Parent_View 	@34
 							location   	(57, -168)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B45958D02A3"
-							client     	@5
-							supplier   	@3
+							client     	@34
+							supplier   	@31
 							vertices   	(list Points
 							    (313, 472)
 							    (370, 353))
 							line_style 	0)
-						    (object RoleView "$UNNAMED$2" @7
-							Parent_View 	@5
+						    (object RoleView "$UNNAMED$20" @36
+							Parent_View 	@34
 							location   	(57, -168)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B45958D02A6"
-							client     	@5
-							supplier   	@4
+							client     	@34
+							supplier   	@33
 							vertices   	(list Points
 							    (313, 472)
 							    (257, 592))
 							line_style 	0)))
-					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Matricula::Registra Inscripción" @8
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Matricula::Consulta Inscripcion" @37
+						location   	(816, 1120)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@37
+						    location   	(816, 1258)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	630
+						    justify    	0
+						    label      	"Consulta Inscripcion")
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"5B46B51503E6"
+						height     	118)
+					    (object AssociationViewNew "$UNNAMED$27" @38
+						location   	(509, 888)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"5B46B5240017"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$28" @39
+							Parent_View 	@38
+							location   	(285, 216)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"5B46B52402B1"
+							client     	@38
+							supplier   	@37
+							vertices   	(list Points
+							    (509, 888)
+							    (737, 1061))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$29" @40
+							Parent_View 	@38
+							location   	(285, 216)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"5B46B52402B3"
+							client     	@38
+							supplier   	@33
+							vertices   	(list Points
+							    (509, 888)
+							    (281, 716))
+							line_style 	0)))
+					    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Sistema" @41
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(2144, 928)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@41
+						    location   	(2144, 1088)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	325
+						    justify    	0
+						    label      	"Sistema")
+						icon       	"Actor"
+						icon_style 	"Icon"
+						line_color 	3342489
+						quidu      	"5B45953D0039"
+						annotation 	8
+						autoResize 	TRUE)
+					    (object AssociationViewNew "$UNNAMED$24" @42
+						location   	(1800, 849)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"5B46B2BD00C2"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$25" @43
+							Parent_View 	@42
+							location   	(-104, -159)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"5B46B2BD030E"
+							client     	@42
+							supplier   	@32
+							vertices   	(list Points
+							    (1800, 849)
+							    (1516, 787))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$26" @44
+							Parent_View 	@42
+							location   	(-104, -159)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"5B46B2BD0310"
+							client     	@42
+							supplier   	@41
+							vertices   	(list Points
+							    (1800, 849)
+							    (2085, 912))
+							line_style 	0)))
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Matricula::Registra Inscripción" @45
 						location   	(784, 560)
 						font       	(object Font
 						    size       	9
@@ -410,7 +1461,7 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@8
+						    Parent_View 	@45
 						    location   	(784, 698)
 						    anchor_loc 	1
 						    nlines     	2
@@ -422,7 +1473,7 @@
 						fill_color 	13434879
 						quidu      	"5B45950102EA"
 						height     	118)
-					    (object AssociationViewNew "$UNNAMED$3" @9
+					    (object AssociationViewNew "$UNNAMED$21" @46
 						location   	(477, 617)
 						font       	(object Font
 						    size       	9
@@ -437,31 +1488,31 @@
 						line_color 	3342489
 						quidu      	"5B45958F030C"
 						roleview_list 	(list RoleViews
-						    (object RoleView "$UNNAMED$4" @10
-							Parent_View 	@9
+						    (object RoleView "$UNNAMED$22" @47
+							Parent_View 	@46
 							location   	(221, -23)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B4595900155"
-							client     	@9
-							supplier   	@8
+							client     	@46
+							supplier   	@45
 							vertices   	(list Points
 							    (477, 617)
 							    (674, 578))
 							line_style 	0)
-						    (object RoleView "$UNNAMED$5" @11
-							Parent_View 	@9
+						    (object RoleView "$UNNAMED$23" @48
+							Parent_View 	@46
 							location   	(221, -23)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B4595900158"
-							client     	@9
-							supplier   	@4
+							client     	@46
+							supplier   	@33
 							vertices   	(list Points
 							    (477, 617)
 							    (281, 656))
 							line_style 	0)))
-					    (object DependencyView "" @12
+					    (object DependencyView "" @49
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -471,8 +1522,8 @@
 						    strike     	FALSE
 						    color      	0
 						    default_color 	TRUE)
-						stereotype 	(object SegLabel @13
-						    Parent_View 	@12
+						stereotype 	(object SegLabel @50
+						    Parent_View 	@49
 						    location   	(738, 351)
 						    font       	(object Font
 							size       	9
@@ -494,11 +1545,151 @@
 						    orientation 	0)
 						line_color 	3342489
 						quidu      	"5B4595950382"
-						client     	@3
-						supplier   	@8
+						client     	@31
+						supplier   	@45
 						vertices   	(list Points
 						    (587, 345)
 						    (729, 501))
+						line_style 	0)
+					    (object DependencyView "" @51
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						stereotype 	(object SegLabel @52
+						    Parent_View 	@51
+						    location   	(1196, 577)
+						    font       	(object Font
+							size       	9
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    anchor     	10
+						    anchor_loc 	1
+						    nlines     	1
+						    max_width  	450
+						    justify    	0
+						    label      	"<<include>>"
+						    pctDist    	0.660184
+						    height     	114
+						    orientation 	0)
+						line_color 	3342489
+						quidu      	"5B46B39B028D"
+						client     	@45
+						supplier   	@32
+						vertices   	(list Points
+						    (892, 595)
+						    (1298, 730))
+						line_style 	0)
+					    (object DependencyView "" @53
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						stereotype 	(object SegLabel @54
+						    Parent_View 	@53
+						    location   	(678, 866)
+						    font       	(object Font
+							size       	9
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    anchor     	10
+						    anchor_loc 	1
+						    nlines     	1
+						    max_width  	450
+						    justify    	0
+						    label      	"<<extend>>"
+						    pctDist    	0.592267
+						    height     	120
+						    orientation 	0)
+						line_color 	3342489
+						quidu      	"5B46B52A006A"
+						client     	@37
+						supplier   	@45
+						vertices   	(list Points
+						    (809, 1061)
+						    (791, 721))
+						line_style 	0)
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Pago::Actualizar estado de Inscripcion" @55
+						location   	(1408, 1520)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@55
+						    location   	(1408, 1658)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	630
+						    justify    	0
+						    label      	"Actualizar estado de Inscripcion")
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"5B46B588032B")
+					    (object DependencyView "" @56
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						stereotype 	(object SegLabel @57
+						    Parent_View 	@56
+						    location   	(1243, 1313)
+						    font       	(object Font
+							size       	9
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    anchor     	10
+						    anchor_loc 	1
+						    nlines     	1
+						    max_width  	450
+						    justify    	0
+						    label      	"<<extend>>"
+						    pctDist    	0.379397
+						    height     	78
+						    orientation 	1)
+						line_color 	3342489
+						quidu      	"5B46C7EE0111"
+						client     	@55
+						supplier   	@37
+						vertices   	(list Points
+						    (1322, 1462)
+						    (997, 1241))
 						line_style 	0)))))
 			    (object Class_Category "Gestion de Pago"
 				quid       	"5B45901C00EF"
@@ -509,223 +1700,213 @@
 					quidu      	"5B458DB30115")
 				    (object Visibility_Relationship
 					quid       	"5B4593DF006E"
-					supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Documentos Post-Matricula"
+					supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Procesos Documentarios"
 					quidu      	"5B45915F0293"))
 				exportControl 	"Public"
 				logical_models 	(list unit_reference_list
-				    (object UseCase "Consulta metodos de Pago"
+				    (object UseCase "Consulta deuda"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
 					quid       	"5B45976902E4"
 					visible_modules 	(list dependency_list
 					    (object Dependency_Relationship
 						quid       	"5B4598B803DC"
 						stereotype 	"extend"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Selecciona metodos de Pago"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Pagar deuda"
 						quidu      	"5B4597720305")))
-				    (object UseCase "Selecciona metodos de Pago"
+				    (object UseCase "Pagar deuda"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
 					quid       	"5B4597720305"
 					visible_modules 	(list dependency_list
 					    (object Dependency_Relationship
-						quid       	"5B4598D403B5"
-						stereotype 	"include"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Registra Deuda de Alumno"
-						quidu      	"5B4597C000CC")
-					    (object Dependency_Relationship
 						quid       	"5B4598E50105"
 						stereotype 	"extend"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Consulta metodos de Pago"
-						quidu      	"5B45976902E4")))
-				    (object UseCase "Registra Deuda de Alumno"
-					quid       	"5B4597C000CC"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Consulta deuda"
+						quidu      	"5B45976902E4")
+					    (object Dependency_Relationship
+						quid       	"5B46CA2702E1"
+						stereotype 	"include"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Actualizar estado de Inscripcion"
+						quidu      	"5B46B588032B")))
+				    (object UseCase "Consulta boleta de pago"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
+					quid       	"5B459A640210"
 					visible_modules 	(list dependency_list
 					    (object Dependency_Relationship
-						quid       	"5B4599A70053"
-						stereotype 	"include"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Envia deuda a Entidad Financiera"
-						quidu      	"5B4597E102DE")
-					    (object Dependency_Relationship
-						quid       	"5B4599AC0013"
-						stereotype 	"include"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Genera Recibo de Pago"
-						quidu      	"5B4597CE03CC")
-					    (object Dependency_Relationship
-						quid       	"5B459B3301F8"
+						quid       	"5B46CA9B00D9"
 						stereotype 	"extend"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Consulta estado de Pago"
-						quidu      	"5B4599E002F7")
-					    (object Dependency_Relationship
-						quid       	"5B459B3A03A9"
-						stereotype 	"include"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Registra Conformidad de Pago"
-						quidu      	"5B4599FA01BA")))
-				    (object UseCase "Genera Recibo de Pago"
-					quid       	"5B4597CE03CC"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Pagar deuda"
+						quidu      	"5B4597720305")))
+				    (object UseCase "Actualizar estado de Inscripcion"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
+					quid       	"5B46B588032B"
 					visible_modules 	(list dependency_list
 					    (object Dependency_Relationship
-						quid       	"5B45996200AD"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Registra Deuda de Alumno"
-						quidu      	"5B4597C000CC")
-					    (object Dependency_Relationship
-						quid       	"5B459C1E03AF"
-						stereotype 	"include"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Envia deuda a Entidad Financiera"
-						quidu      	"5B4597E102DE")))
-				    (object UseCase "Envia deuda a Entidad Financiera"
-					quid       	"5B4597E102DE"
-					visible_modules 	(list dependency_list
-					    (object Dependency_Relationship
-						quid       	"5B45995100DB"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Registra Deuda de Alumno"
-						quidu      	"5B4597C000CC")))
-				    (object UseCase "Consulta estado de Pago"
-					quid       	"5B4599E002F7"
-					visible_modules 	(list dependency_list
-					    (object Dependency_Relationship
-						quid       	"5B459D1C03AD"
+						quid       	"5B46C7EE0111"
 						stereotype 	"extend"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Registra Deuda de Alumno"
-						quidu      	"5B4597C000CC")))
-				    (object UseCase "Registra Conformidad de Pago"
-					quid       	"5B4599FA01BA"
-					visible_modules 	(list dependency_list
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Matricula::Consulta Inscripcion"
+						quidu      	"5B46B51503E6")
 					    (object Dependency_Relationship
-						quid       	"5B459A7901D2"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Recibe Boleta Electronica"
-						quidu      	"5B459A640210")))
-				    (object UseCase "Recibe Boleta Electronica"
-					quid       	"5B459A640210")
-				    (object UseCase "Genera Boleta de Pago"
-					quid       	"5B459B8F0045"
-					visible_modules 	(list dependency_list
-					    (object Dependency_Relationship
-						quid       	"5B459CFB000E"
-						stereotype 	"include"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Recibe Boleta Electronica"
-						quidu      	"5B459A640210")
-					    (object Dependency_Relationship
-						quid       	"5B459D90014C"
-						stereotype 	"include"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Envia a Sunat"
-						quidu      	"5B459D770002")))
-				    (object UseCase "Envia a Sunat"
-					quid       	"5B459D770002")
-				    (object Association "$UNNAMED$6"
+						quid       	"5B46CA3501A8"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Pagar deuda"
+						quidu      	"5B4597720305")))
+				    (object Association "$UNNAMED$33"
 					quid       	"5B4598A7036C"
 					roles      	(list role_list
-					    (object Role "$UNNAMED$7"
+					    (object Role "$UNNAMED$34"
 						quid       	"5B4598A8020D"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Consulta metodos de Pago"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Consulta deuda"
 						quidu      	"5B45976902E4"
 						is_navigable 	TRUE)
-					    (object Role "$UNNAMED$8"
+					    (object Role "$UNNAMED$35"
 						quid       	"5B4598A8020F"
 						supplier   	"Use Case View::Use-Case Model::Actors::Alumno"
 						quidu      	"5B458BF603B8")))
-				    (object Association "$UNNAMED$9"
+				    (object Association "$UNNAMED$36"
 					quid       	"5B4598AA01CF"
 					roles      	(list role_list
-					    (object Role "$UNNAMED$10"
+					    (object Role "$UNNAMED$37"
 						quid       	"5B4598AB00AD"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Selecciona metodos de Pago"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Pagar deuda"
 						quidu      	"5B4597720305"
 						is_navigable 	TRUE)
-					    (object Role "$UNNAMED$11"
+					    (object Role "$UNNAMED$38"
 						quid       	"5B4598AB00AF"
 						supplier   	"Use Case View::Use-Case Model::Actors::Alumno"
 						quidu      	"5B458BF603B8")))
-				    (object Association "$UNNAMED$12"
-					quid       	"5B4598EB0186"
-					roles      	(list role_list
-					    (object Role "$UNNAMED$13"
-						quid       	"5B4598EB0324"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Registra Deuda de Alumno"
-						quidu      	"5B4597C000CC"
-						is_navigable 	TRUE)
-					    (object Role "$UNNAMED$14"
-						quid       	"5B4598EB0326"
-						supplier   	"Use Case View::Use-Case Model::Actors::Sistema"
-						quidu      	"5B45953D0039")))
-				    (object Association "$UNNAMED$15"
-					quid       	"5B4598F90056"
-					roles      	(list role_list
-					    (object Role "$UNNAMED$16"
-						quid       	"5B4598F9025C"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Genera Recibo de Pago"
-						quidu      	"5B4597CE03CC"
-						is_navigable 	TRUE)
-					    (object Role "$UNNAMED$17"
-						quid       	"5B4598F9025E"
-						supplier   	"Use Case View::Use-Case Model::Actors::Sistema"
-						quidu      	"5B45953D0039")))
-				    (object Association "$UNNAMED$18"
-					quid       	"5B4598FB01A6"
-					roles      	(list role_list
-					    (object Role "$UNNAMED$19"
-						quid       	"5B4598FC0054"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Envia deuda a Entidad Financiera"
-						quidu      	"5B4597E102DE"
-						is_navigable 	TRUE)
-					    (object Role "$UNNAMED$20"
-						quid       	"5B4598FC0056"
-						supplier   	"Use Case View::Use-Case Model::Actors::Sistema"
-						quidu      	"5B45953D0039")))
-				    (object Association "$UNNAMED$21"
-					quid       	"5B459B030317"
-					roles      	(list role_list
-					    (object Role "$UNNAMED$22"
-						quid       	"5B459B040259"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Consulta estado de Pago"
-						quidu      	"5B4599E002F7"
-						is_navigable 	TRUE)
-					    (object Role "$UNNAMED$23"
-						quid       	"5B459B04025B"
-						supplier   	"Use Case View::Use-Case Model::Actors::Sistema"
-						quidu      	"5B45953D0039")))
-				    (object Association "$UNNAMED$24"
-					quid       	"5B459B0B000D"
-					roles      	(list role_list
-					    (object Role "$UNNAMED$25"
-						quid       	"5B459B0C0022"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Registra Conformidad de Pago"
-						quidu      	"5B4599FA01BA"
-						is_navigable 	TRUE)
-					    (object Role "$UNNAMED$26"
-						quid       	"5B459B0C0024"
-						supplier   	"Use Case View::Use-Case Model::Actors::Sistema"
-						quidu      	"5B45953D0039")))
-				    (object Association "$UNNAMED$27"
-					quid       	"5B459BC60276"
-					roles      	(list role_list
-					    (object Role "$UNNAMED$28"
-						quid       	"5B459BC70257"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Genera Boleta de Pago"
-						quidu      	"5B459B8F0045"
-						is_navigable 	TRUE)
-					    (object Role "$UNNAMED$29"
-						quid       	"5B459BC70259"
-						supplier   	"Use Case View::Use-Case Model::Actors::Sistema"
-						quidu      	"5B45953D0039")))
-				    (object Association "$UNNAMED$30"
+				    (object Association "$UNNAMED$39"
 					quid       	"5B459CEF0390"
 					roles      	(list role_list
-					    (object Role "$UNNAMED$31"
+					    (object Role "$UNNAMED$40"
 						quid       	"5B459CF0027D"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Recibe Boleta Electronica"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Consulta boleta de pago"
 						quidu      	"5B459A640210"
 						is_navigable 	TRUE)
-					    (object Role "$UNNAMED$32"
+					    (object Role "$UNNAMED$41"
 						quid       	"5B459CF0027F"
 						supplier   	"Use Case View::Use-Case Model::Actors::Alumno"
 						quidu      	"5B458BF603B8")))
-				    (object Association "$UNNAMED$33"
-					quid       	"5B459D800037"
+				    (object Association "$UNNAMED$42"
+					quid       	"5B46B5C4028F"
 					roles      	(list role_list
-					    (object Role "$UNNAMED$34"
-						quid       	"5B459D810054"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Envia a Sunat"
-						quidu      	"5B459D770002"
+					    (object Role "$UNNAMED$43"
+						quid       	"5B46B5C501CF"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Pago::Actualizar estado de Inscripcion"
+						quidu      	"5B46B588032B"
 						is_navigable 	TRUE)
-					    (object Role "$UNNAMED$35"
-						quid       	"5B459D810056"
+					    (object Role "$UNNAMED$44"
+						quid       	"5B46B5C501D1"
 						supplier   	"Use Case View::Use-Case Model::Actors::Sistema"
 						quidu      	"5B45953D0039"))))
 				logical_presentations 	(list unit_reference_list
@@ -736,10 +1917,10 @@
 					max_height 	28350
 					max_width  	21600
 					origin_x   	0
-					origin_y   	0
+					origin_y   	337
 					items      	(list diagram_item_list
-					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Pago::Consulta metodos de Pago" @14
-						location   	(544, 144)
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Pago::Consulta deuda" @58
+						location   	(704, 160)
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -750,20 +1931,20 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@14
-						    location   	(544, 282)
+						    Parent_View 	@58
+						    location   	(704, 298)
 						    anchor_loc 	1
 						    nlines     	2
 						    max_width  	630
 						    justify    	0
-						    label      	"Consulta metodos de Pago")
+						    label      	"Consulta deuda")
 						icon_style 	"Icon"
 						line_color 	3342489
 						fill_color 	13434879
 						quidu      	"5B45976902E4"
 						height     	118)
-					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Pago::Selecciona metodos de Pago" @15
-						location   	(640, 576)
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Pago::Pagar deuda" @59
+						location   	(832, 576)
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -774,20 +1955,20 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@15
-						    location   	(640, 714)
+						    Parent_View 	@59
+						    location   	(832, 714)
 						    anchor_loc 	1
 						    nlines     	2
 						    max_width  	630
 						    justify    	0
-						    label      	"Selecciona metodos de Pago")
+						    label      	"Pagar deuda")
 						icon_style 	"Icon"
 						line_color 	3342489
 						fill_color 	13434879
 						quidu      	"5B4597720305"
 						height     	118)
-					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Pago::Registra Deuda de Alumno" @16
-						location   	(1168, 560)
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Pago::Consulta boleta de pago" @60
+						location   	(752, 992)
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -798,217 +1979,19 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@16
-						    location   	(1168, 698)
+						    Parent_View 	@60
+						    location   	(752, 1130)
 						    anchor_loc 	1
 						    nlines     	2
 						    max_width  	630
 						    justify    	0
-						    label      	"Registra Deuda de Alumno")
+						    label      	"Consulta boleta de pago")
 						icon_style 	"Icon"
 						line_color 	3342489
 						fill_color 	13434879
-						quidu      	"5B4597C000CC"
+						quidu      	"5B459A640210"
 						height     	118)
-					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Pago::Genera Recibo de Pago" @17
-						location   	(1136, 112)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@17
-						    location   	(1136, 250)
-						    anchor_loc 	1
-						    nlines     	2
-						    max_width  	630
-						    justify    	0
-						    label      	"Genera Recibo de Pago")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5B4597CE03CC"
-						height     	118)
-					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Pago::Envia deuda a Entidad Financiera" @18
-						location   	(2064, 112)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@18
-						    location   	(2064, 250)
-						    anchor_loc 	1
-						    nlines     	2
-						    max_width  	630
-						    justify    	0
-						    label      	"Envia deuda a Entidad Financiera")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5B4597E102DE"
-						height     	118)
-					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Pago::Consulta estado de Pago" @19
-						location   	(1456, 992)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@19
-						    location   	(1456, 1130)
-						    anchor_loc 	1
-						    nlines     	2
-						    max_width  	630
-						    justify    	0
-						    label      	"Consulta estado de Pago")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5B4599E002F7"
-						height     	118)
-					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Pago::Registra Conformidad de Pago" @20
-						location   	(1216, 1552)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@20
-						    location   	(1216, 1690)
-						    anchor_loc 	1
-						    nlines     	2
-						    max_width  	630
-						    justify    	0
-						    label      	"Registra Conformidad de Pago")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5B4599FA01BA"
-						height     	118)
-					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Pago::Genera Boleta de Pago" @21
-						location   	(1280, 2160)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@21
-						    location   	(1280, 2298)
-						    anchor_loc 	1
-						    nlines     	2
-						    max_width  	630
-						    justify    	0
-						    label      	"Genera Boleta de Pago")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5B459B8F0045"
-						height     	118)
-					    (object DependencyView "" @22
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						stereotype 	(object SegLabel @23
-						    Parent_View 	@22
-						    location   	(901, 540)
-						    font       	(object Font
-							size       	9
-							face       	"Arial"
-							bold       	FALSE
-							italics    	FALSE
-							underline  	FALSE
-							strike     	FALSE
-							color      	0
-							default_color 	TRUE)
-						    anchor     	10
-						    anchor_loc 	1
-						    nlines     	1
-						    max_width  	450
-						    justify    	0
-						    label      	"<<include>>"
-						    pctDist    	0.495940
-						    height     	26
-						    orientation 	0)
-						line_color 	3342489
-						quidu      	"5B4598D403B5"
-						client     	@15
-						supplier   	@16
-						vertices   	(list Points
-						    (748, 570)
-						    (1058, 561))
-						line_style 	0)
-					    (object DependencyView "" @24
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						stereotype 	(object SegLabel @25
-						    Parent_View 	@24
-						    location   	(1617, 86)
-						    font       	(object Font
-							size       	9
-							face       	"Arial"
-							bold       	FALSE
-							italics    	FALSE
-							underline  	FALSE
-							strike     	FALSE
-							color      	0
-							default_color 	TRUE)
-						    anchor     	10
-						    anchor_loc 	1
-						    nlines     	1
-						    max_width  	450
-						    justify    	0
-						    label      	"<<include>>"
-						    pctDist    	0.525758
-						    height     	27
-						    orientation 	0)
-						line_color 	3342489
-						quidu      	"5B459C1E03AF"
-						client     	@17
-						supplier   	@18
-						vertices   	(list Points
-						    (1244, 112)
-						    (1954, 112))
-						line_style 	0)
-					    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Alumno" @26
+					    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Alumno" @61
 						ShowCompartmentStereotypes 	TRUE
 						IncludeAttribute 	TRUE
 						IncludeOperation 	TRUE
@@ -1023,11 +2006,11 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@26
+						    Parent_View 	@61
 						    location   	(160, 752)
 						    anchor_loc 	1
 						    nlines     	2
-						    max_width  	479
+						    max_width  	325
 						    justify    	0
 						    label      	"Alumno")
 						icon       	"Actor"
@@ -1036,8 +2019,8 @@
 						quidu      	"5B458BF603B8"
 						annotation 	8
 						autoResize 	TRUE)
-					    (object AssociationViewNew "$UNNAMED$6" @27
-						location   	(312, 412)
+					    (object AssociationViewNew "$UNNAMED$33" @62
+						location   	(358, 432)
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -1051,32 +2034,32 @@
 						line_color 	3342489
 						quidu      	"5B4598A7036C"
 						roleview_list 	(list RoleViews
-						    (object RoleView "$UNNAMED$7" @28
-							Parent_View 	@27
-							location   	(72, -356)
+						    (object RoleView "$UNNAMED$34" @63
+							Parent_View 	@62
+							location   	(118, -336)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B4598A8020D"
-							client     	@27
-							supplier   	@14
+							client     	@62
+							supplier   	@58
 							vertices   	(list Points
-							    (312, 412)
-							    (408, 305))
+							    (358, 432)
+							    (500, 321))
 							line_style 	0)
-						    (object RoleView "$UNNAMED$8" @29
-							Parent_View 	@27
-							location   	(72, -356)
+						    (object RoleView "$UNNAMED$35" @64
+							Parent_View 	@62
+							location   	(118, -336)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B4598A8020F"
-							client     	@27
-							supplier   	@26
+							client     	@62
+							supplier   	@61
 							vertices   	(list Points
-							    (312, 412)
-							    (217, 520))
+							    (358, 432)
+							    (217, 543))
 							line_style 	0)))
-					    (object AssociationViewNew "$UNNAMED$9" @30
-						location   	(373, 582)
+					    (object AssociationViewNew "$UNNAMED$36" @65
+						location   	(469, 582)
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -1090,56 +2073,32 @@
 						line_color 	3342489
 						quidu      	"5B4598AA01CF"
 						roleview_list 	(list RoleViews
-						    (object RoleView "$UNNAMED$10" @31
-							Parent_View 	@30
-							location   	(133, -186)
+						    (object RoleView "$UNNAMED$37" @66
+							Parent_View 	@65
+							location   	(229, -186)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B4598AB00AD"
-							client     	@30
-							supplier   	@15
+							client     	@65
+							supplier   	@59
 							vertices   	(list Points
-							    (373, 582)
-							    (529, 577))
+							    (469, 582)
+							    (722, 576))
 							line_style 	0)
-						    (object RoleView "$UNNAMED$11" @32
-							Parent_View 	@30
-							location   	(133, -186)
+						    (object RoleView "$UNNAMED$38" @67
+							Parent_View 	@65
+							location   	(229, -186)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B4598AB00AF"
-							client     	@30
-							supplier   	@26
+							client     	@65
+							supplier   	@61
 							vertices   	(list Points
-							    (373, 582)
+							    (469, 582)
 							    (217, 588))
 							line_style 	0)))
-					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Pago::Recibe Boleta Electronica" @33
-						location   	(560, 1120)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@33
-						    location   	(560, 1258)
-						    anchor_loc 	1
-						    nlines     	2
-						    max_width  	630
-						    justify    	0
-						    label      	"Recibe Boleta Electronica")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5B459A640210"
-						height     	118)
-					    (object AssociationViewNew "$UNNAMED$30" @34
-						location   	(372, 873)
+					    (object AssociationViewNew "$UNNAMED$39" @68
+						location   	(441, 781)
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -1153,230 +2112,32 @@
 						line_color 	3342489
 						quidu      	"5B459CEF0390"
 						roleview_list 	(list RoleViews
-						    (object RoleView "$UNNAMED$31" @35
-							Parent_View 	@34
-							location   	(212, 281)
+						    (object RoleView "$UNNAMED$40" @69
+							Parent_View 	@68
+							location   	(281, 189)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B459CF0027D"
-							client     	@34
-							supplier   	@33
+							client     	@68
+							supplier   	@60
 							vertices   	(list Points
-							    (372, 873)
-							    (515, 1062))
+							    (441, 781)
+							    (666, 934))
 							line_style 	0)
-						    (object RoleView "$UNNAMED$32" @36
-							Parent_View 	@34
-							location   	(212, 281)
+						    (object RoleView "$UNNAMED$41" @70
+							Parent_View 	@68
+							location   	(281, 189)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B459CF0027F"
-							client     	@34
-							supplier   	@26
+							client     	@68
+							supplier   	@61
 							vertices   	(list Points
-							    (372, 873)
-							    (229, 684))
+							    (441, 781)
+							    (217, 629))
 							line_style 	0)))
-					    (object DependencyView "" @37
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						stereotype 	(object SegLabel @38
-						    Parent_View 	@37
-						    location   	(767, 1609)
-						    font       	(object Font
-							size       	9
-							face       	"Arial"
-							bold       	FALSE
-							italics    	FALSE
-							underline  	FALSE
-							strike     	FALSE
-							color      	0
-							default_color 	TRUE)
-						    anchor     	10
-						    anchor_loc 	1
-						    nlines     	1
-						    max_width  	450
-						    justify    	0
-						    label      	"<<include>>"
-						    pctDist    	0.674323
-						    height     	107
-						    orientation 	0)
-						line_color 	3342489
-						quidu      	"5B459CFB000E"
-						client     	@21
-						supplier   	@33
-						vertices   	(list Points
-						    (1238, 2101)
-						    (670, 1281))
-						line_style 	0)
-					    (object DependencyView "" @39
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						stereotype 	(object SegLabel @40
-						    Parent_View 	@39
-						    location   	(724, 406)
-						    font       	(object Font
-							size       	9
-							face       	"Arial"
-							bold       	FALSE
-							italics    	FALSE
-							underline  	FALSE
-							strike     	FALSE
-							color      	0
-							default_color 	TRUE)
-						    anchor     	10
-						    anchor_loc 	1
-						    nlines     	1
-						    max_width  	450
-						    justify    	0
-						    label      	"<<extend>>"
-						    pctDist    	0.596389
-						    height     	121
-						    orientation 	0)
-						line_color 	3342489
-						quidu      	"5B4598B803DC"
-						client     	@14
-						supplier   	@15
-						vertices   	(list Points
-						    (578, 305)
-						    (625, 518))
-						line_style 	0)
-					    (object DependencyView "" @41
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						stereotype 	(object SegLabel @42
-						    Parent_View 	@41
-						    location   	(1455, 832)
-						    font       	(object Font
-							size       	9
-							face       	"Arial"
-							bold       	FALSE
-							italics    	FALSE
-							underline  	FALSE
-							strike     	FALSE
-							color      	0
-							default_color 	TRUE)
-						    anchor     	10
-						    anchor_loc 	1
-						    nlines     	1
-						    max_width  	450
-						    justify    	0
-						    label      	"<<extend>>"
-						    pctDist    	0.253315
-						    height     	90
-						    orientation 	1)
-						line_color 	3342489
-						quidu      	"5B459D1C03AD"
-						client     	@19
-						supplier   	@16
-						vertices   	(list Points
-						    (1416, 934)
-						    (1273, 721))
-						line_style 	0)
-					    (object DependencyView "" @43
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						stereotype 	(object SegLabel @44
-						    Parent_View 	@43
-						    location   	(1276, 428)
-						    font       	(object Font
-							size       	9
-							face       	"Arial"
-							bold       	FALSE
-							italics    	FALSE
-							underline  	FALSE
-							strike     	FALSE
-							color      	0
-							default_color 	TRUE)
-						    anchor     	10
-						    anchor_loc 	1
-						    nlines     	1
-						    max_width  	450
-						    justify    	0
-						    label      	"<<include>>"
-						    pctDist    	0.283384
-						    height     	120
-						    orientation 	1)
-						line_color 	3342489
-						quidu      	"5B4599AC0013"
-						client     	@16
-						supplier   	@17
-						vertices   	(list Points
-						    (1161, 501)
-						    (1145, 273))
-						line_style 	0)
-					    (object DependencyView "" @45
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						stereotype 	(object SegLabel @46
-						    Parent_View 	@45
-						    location   	(1090, 1217)
-						    font       	(object Font
-							size       	9
-							face       	"Arial"
-							bold       	FALSE
-							italics    	FALSE
-							underline  	FALSE
-							strike     	FALSE
-							color      	0
-							default_color 	TRUE)
-						    anchor     	10
-						    anchor_loc 	1
-						    nlines     	1
-						    max_width  	450
-						    justify    	0
-						    label      	"<<include>>"
-						    pctDist    	0.635718
-						    height     	106
-						    orientation 	1)
-						line_color 	3342489
-						quidu      	"5B459B3A03A9"
-						client     	@16
-						supplier   	@20
-						vertices   	(list Points
-						    (1172, 721)
-						    (1210, 1493))
-						line_style 	0)
-					    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Sistema" @47
-						ShowCompartmentStereotypes 	TRUE
-						IncludeAttribute 	TRUE
-						IncludeOperation 	TRUE
-						location   	(2080, 768)
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Pago::Actualizar estado de Inscripcion" @71
+						location   	(1424, 496)
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -1387,279 +2148,18 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@47
-						    location   	(2080, 928)
-						    anchor_loc 	1
-						    nlines     	2
-						    max_width  	483
-						    justify    	0
-						    label      	"Sistema")
-						icon       	"Actor"
-						icon_style 	"Icon"
-						line_color 	3342489
-						quidu      	"5B45953D0039"
-						annotation 	8
-						autoResize 	TRUE)
-					    (object AssociationViewNew "$UNNAMED$12" @48
-						location   	(1648, 667)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5B4598EB0186"
-						roleview_list 	(list RoleViews
-						    (object RoleView "$UNNAMED$13" @49
-							Parent_View 	@48
-							location   	(-48, -725)
-							stereotype 	TRUE
-							line_color 	3342489
-							quidu      	"5B4598EB0324"
-							client     	@48
-							supplier   	@16
-							vertices   	(list Points
-							    (1648, 667)
-							    (1276, 582))
-							line_style 	0)
-						    (object RoleView "$UNNAMED$14" @50
-							Parent_View 	@48
-							location   	(-48, -725)
-							stereotype 	TRUE
-							line_color 	3342489
-							quidu      	"5B4598EB0326"
-							client     	@48
-							supplier   	@47
-							vertices   	(list Points
-							    (1648, 667)
-							    (2021, 752))
-							line_style 	0)))
-					    (object AssociationViewNew "$UNNAMED$15" @51
-						location   	(1680, 487)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5B4598F90056"
-						roleview_list 	(list RoleViews
-						    (object RoleView "$UNNAMED$16" @52
-							Parent_View 	@51
-							location   	(-16, -905)
-							stereotype 	TRUE
-							line_color 	3342489
-							quidu      	"5B4598F9025C"
-							client     	@51
-							supplier   	@17
-							vertices   	(list Points
-							    (1680, 487)
-							    (1339, 251))
-							line_style 	0)
-						    (object RoleView "$UNNAMED$17" @53
-							Parent_View 	@51
-							location   	(-16, -905)
-							stereotype 	TRUE
-							line_color 	3342489
-							quidu      	"5B4598F9025E"
-							client     	@51
-							supplier   	@47
-							vertices   	(list Points
-							    (1680, 487)
-							    (2021, 724))
-							line_style 	0)))
-					    (object AssociationViewNew "$UNNAMED$18" @54
-						location   	(2071, 480)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5B4598FB01A6"
-						roleview_list 	(list RoleViews
-						    (object RoleView "$UNNAMED$19" @55
-							Parent_View 	@54
-							location   	(375, -912)
-							stereotype 	TRUE
-							line_color 	3342489
-							quidu      	"5B4598FC0054"
-							client     	@54
-							supplier   	@18
-							vertices   	(list Points
-							    (2071, 480)
-							    (2067, 273))
-							line_style 	0)
-						    (object RoleView "$UNNAMED$20" @56
-							Parent_View 	@54
-							location   	(375, -912)
-							stereotype 	TRUE
-							line_color 	3342489
-							quidu      	"5B4598FC0056"
-							client     	@54
-							supplier   	@47
-							vertices   	(list Points
-							    (2071, 480)
-							    (2076, 687))
-							line_style 	0)))
-					    (object AssociationViewNew "$UNNAMED$21" @57
-						location   	(1792, 868)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5B459B030317"
-						roleview_list 	(list RoleViews
-						    (object RoleView "$UNNAMED$22" @58
-							Parent_View 	@57
-							location   	(-96, 308)
-							stereotype 	TRUE
-							line_color 	3342489
-							quidu      	"5B459B040259"
-							client     	@57
-							supplier   	@19
-							vertices   	(list Points
-							    (1792, 868)
-							    (1564, 951))
-							line_style 	0)
-						    (object RoleView "$UNNAMED$23" @59
-							Parent_View 	@57
-							location   	(-96, 308)
-							stereotype 	TRUE
-							line_color 	3342489
-							quidu      	"5B459B04025B"
-							client     	@57
-							supplier   	@47
-							vertices   	(list Points
-							    (1792, 868)
-							    (2021, 785))
-							line_style 	0)))
-					    (object AssociationViewNew "$UNNAMED$24" @60
-						location   	(1647, 1155)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5B459B0B000D"
-						roleview_list 	(list RoleViews
-						    (object RoleView "$UNNAMED$25" @61
-							Parent_View 	@60
-							location   	(-241, 595)
-							stereotype 	TRUE
-							line_color 	3342489
-							quidu      	"5B459B0C0022"
-							client     	@60
-							supplier   	@20
-							vertices   	(list Points
-							    (1647, 1155)
-							    (1275, 1493))
-							line_style 	0)
-						    (object RoleView "$UNNAMED$26" @62
-							Parent_View 	@60
-							location   	(-241, 595)
-							stereotype 	TRUE
-							line_color 	3342489
-							quidu      	"5B459B0C0024"
-							client     	@60
-							supplier   	@47
-							vertices   	(list Points
-							    (1647, 1155)
-							    (2019, 818))
-							line_style 	0)))
-					    (object AssociationViewNew "$UNNAMED$27" @63
-						location   	(1659, 1497)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5B459BC60276"
-						roleview_list 	(list RoleViews
-						    (object RoleView "$UNNAMED$28" @64
-							Parent_View 	@63
-							location   	(-421, 729)
-							stereotype 	TRUE
-							line_color 	3342489
-							quidu      	"5B459BC70257"
-							client     	@63
-							supplier   	@21
-							vertices   	(list Points
-							    (1659, 1497)
-							    (1310, 2101))
-							line_style 	0)
-						    (object RoleView "$UNNAMED$29" @65
-							Parent_View 	@63
-							location   	(-421, 729)
-							stereotype 	TRUE
-							line_color 	3342489
-							quidu      	"5B459BC70259"
-							client     	@63
-							supplier   	@47
-							vertices   	(list Points
-							    (1659, 1497)
-							    (2008, 893))
-							line_style 	0)))
-					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Pago::Envia a Sunat" @66
-						location   	(1552, 2608)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@66
-						    location   	(1552, 2746)
+						    Parent_View 	@71
+						    location   	(1424, 634)
 						    anchor_loc 	1
 						    nlines     	2
 						    max_width  	630
 						    justify    	0
-						    label      	"Envia a Sunat")
+						    label      	"Actualizar estado de Inscripcion")
 						icon_style 	"Icon"
 						line_color 	3342489
 						fill_color 	13434879
-						quidu      	"5B459D770002"
-						height     	118)
-					    (object AssociationViewNew "$UNNAMED$33" @67
-						location   	(1791, 1768)
+						quidu      	"5B46B588032B")
+					    (object DependencyView "" @72
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -1669,47 +2169,9 @@
 						    strike     	FALSE
 						    color      	0
 						    default_color 	TRUE)
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5B459D800037"
-						roleview_list 	(list RoleViews
-						    (object RoleView "$UNNAMED$34" @68
-							Parent_View 	@67
-							location   	(-289, 1000)
-							stereotype 	TRUE
-							line_color 	3342489
-							quidu      	"5B459D810054"
-							client     	@67
-							supplier   	@66
-							vertices   	(list Points
-							    (1791, 1768)
-							    (1566, 2549))
-							line_style 	0)
-						    (object RoleView "$UNNAMED$35" @69
-							Parent_View 	@67
-							location   	(-289, 1000)
-							stereotype 	TRUE
-							line_color 	3342489
-							quidu      	"5B459D810056"
-							client     	@67
-							supplier   	@47
-							vertices   	(list Points
-							    (1791, 1768)
-							    (2016, 988))
-							line_style 	0)))
-					    (object DependencyView "" @70
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						stereotype 	(object SegLabel @71
-						    Parent_View 	@70
-						    location   	(1314, 2446)
+						stereotype 	(object SegLabel @73
+						    Parent_View 	@72
+						    location   	(1120, 474)
 						    font       	(object Font
 							size       	9
 							face       	"Arial"
@@ -1725,18 +2187,96 @@
 						    max_width  	450
 						    justify    	0
 						    label      	"<<include>>"
-						    pctDist    	0.280791
-						    height     	118
+						    pctDist    	0.500000
+						    height     	59
+						    orientation 	0)
+						line_color 	3342489
+						quidu      	"5B46CA2702E1"
+						client     	@59
+						supplier   	@71
+						vertices   	(list Points
+						    (940, 557)
+						    (1314, 508))
+						line_style 	0)
+					    (object DependencyView "" @74
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						stereotype 	(object SegLabel @75
+						    Parent_View 	@74
+						    location   	(910, 859)
+						    font       	(object Font
+							size       	9
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    anchor     	10
+						    anchor_loc 	1
+						    nlines     	1
+						    max_width  	450
+						    justify    	0
+						    label      	"<<extend>>"
+						    pctDist    	0.500000
+						    height     	132
 						    orientation 	1)
 						line_color 	3342489
-						quidu      	"5B459D90014C"
-						client     	@21
-						supplier   	@66
+						quidu      	"5B46CA9B00D9"
+						client     	@60
+						supplier   	@59
 						vertices   	(list Points
-						    (1376, 2321)
-						    (1514, 2549))
+						    (761, 933)
+						    (798, 737))
+						line_style 	0)
+					    (object DependencyView "" @76
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						stereotype 	(object SegLabel @77
+						    Parent_View 	@76
+						    location   	(679, 450)
+						    font       	(object Font
+							size       	9
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    anchor     	10
+						    anchor_loc 	1
+						    nlines     	1
+						    max_width  	450
+						    justify    	0
+						    label      	"<<extend>>"
+						    pctDist    	0.500000
+						    height     	108
+						    orientation 	0)
+						line_color 	3342489
+						quidu      	"5B4598E50105"
+						client     	@59
+						supplier   	@58
+						vertices   	(list Points
+						    (810, 517)
+						    (751, 321))
 						line_style 	0)))))
-			    (object Class_Category "Gestion de Documentos Post-Matricula"
+			    (object Class_Category "Gestion de Procesos Documentarios"
 				quid       	"5B45915F0293"
 				visible_categories 	(list visibility_relationship_list
 				    (object Visibility_Relationship
@@ -1746,74 +2286,190 @@
 				exportControl 	"Public"
 				logical_models 	(list unit_reference_list
 				    (object UseCase "Solicita Documentos Post-Pago"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
 					quid       	"5B459E1B0140"
 					visible_modules 	(list dependency_list
 					    (object Dependency_Relationship
 						quid       	"5B45A016034F"
 						stereotype 	"include"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Documentos Post-Matricula::Entrega Boleta"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Procesos Documentarios::Entrega Boleta"
 						quidu      	"5B459F080001")
 					    (object Dependency_Relationship
 						quid       	"5B45A0190228"
 						stereotype 	"include"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Documentos Post-Matricula::Genera Lista de Asistencia"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Procesos Documentarios::Genera Lista de Asistencia"
 						quidu      	"5B459E59019B")
 					    (object Dependency_Relationship
 						quid       	"5B45A0210107"
 						stereotype 	"include"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Documentos Post-Matricula::Registra Documentos de Matricula"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Procesos Documentarios::Registra Documentos de Matricula"
 						quidu      	"5B459E3400A0")))
 				    (object UseCase "Registra Documentos de Matricula"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
 					quid       	"5B459E3400A0")
 				    (object UseCase "Genera Lista de Asistencia"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
 					quid       	"5B459E59019B")
 				    (object UseCase "Entrega Boleta"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
 					quid       	"5B459F080001")
-				    (object Association "$UNNAMED$36"
+				    (object Association "$UNNAMED$45"
 					quid       	"5B459FEB025E"
 					roles      	(list role_list
-					    (object Role "$UNNAMED$37"
+					    (object Role "$UNNAMED$46"
 						quid       	"5B459FEC0110"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Documentos Post-Matricula::Solicita Documentos Post-Pago"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Procesos Documentarios::Solicita Documentos Post-Pago"
 						quidu      	"5B459E1B0140"
 						is_navigable 	TRUE)
-					    (object Role "$UNNAMED$38"
+					    (object Role "$UNNAMED$47"
 						quid       	"5B459FEC0112"
 						supplier   	"Use Case View::Use-Case Model::Actors::Alumno"
 						quidu      	"5B458BF603B8")))
-				    (object Association "$UNNAMED$39"
+				    (object Association "$UNNAMED$48"
 					quid       	"5B459FF300C6"
 					roles      	(list role_list
-					    (object Role "$UNNAMED$40"
+					    (object Role "$UNNAMED$49"
 						quid       	"5B459FF302FF"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Documentos Post-Matricula::Registra Documentos de Matricula"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Procesos Documentarios::Registra Documentos de Matricula"
 						quidu      	"5B459E3400A0"
 						is_navigable 	TRUE)
-					    (object Role "$UNNAMED$41"
+					    (object Role "$UNNAMED$50"
 						quid       	"5B459FF30301"
 						supplier   	"Use Case View::Use-Case Model::Actors::Cajero"
 						quidu      	"5B458BFD0330")))
-				    (object Association "$UNNAMED$42"
+				    (object Association "$UNNAMED$51"
 					quid       	"5B459FF50126"
 					roles      	(list role_list
-					    (object Role "$UNNAMED$43"
+					    (object Role "$UNNAMED$52"
 						quid       	"5B459FF5031F"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Documentos Post-Matricula::Genera Lista de Asistencia"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Procesos Documentarios::Genera Lista de Asistencia"
 						quidu      	"5B459E59019B"
 						is_navigable 	TRUE)
-					    (object Role "$UNNAMED$44"
+					    (object Role "$UNNAMED$53"
 						quid       	"5B459FF50321"
 						supplier   	"Use Case View::Use-Case Model::Actors::Cajero"
 						quidu      	"5B458BFD0330")))
-				    (object Association "$UNNAMED$45"
+				    (object Association "$UNNAMED$54"
 					quid       	"5B459FF70124"
 					roles      	(list role_list
-					    (object Role "$UNNAMED$46"
+					    (object Role "$UNNAMED$55"
 						quid       	"5B459FF703B0"
-						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Documentos Post-Matricula::Entrega Boleta"
+						supplier   	"Use Case View::Use-Case Model::Actors::Gestion de Procesos Documentarios::Entrega Boleta"
 						quidu      	"5B459F080001"
 						is_navigable 	TRUE)
-					    (object Role "$UNNAMED$47"
+					    (object Role "$UNNAMED$56"
 						quid       	"5B459FF703B2"
 						supplier   	"Use Case View::Use-Case Model::Actors::Cajero"
 						quidu      	"5B458BFD0330"))))
@@ -1827,7 +2483,31 @@
 					origin_x   	0
 					origin_y   	0
 					items      	(list diagram_item_list
-					    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Alumno" @72
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Procesos Documentarios::Solicita Documentos Post-Pago" @78
+						location   	(608, 320)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@78
+						    location   	(608, 458)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	630
+						    justify    	0
+						    label      	"Solicita Documentos Post-Pago")
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"5B459E1B0140"
+						height     	118)
+					    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Alumno" @79
 						ShowCompartmentStereotypes 	TRUE
 						IncludeAttribute 	TRUE
 						IncludeOperation 	TRUE
@@ -1842,11 +2522,11 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@72
+						    Parent_View 	@79
 						    location   	(224, 896)
 						    anchor_loc 	1
 						    nlines     	2
-						    max_width  	487
+						    max_width  	325
 						    justify    	0
 						    label      	"Alumno")
 						icon       	"Actor"
@@ -1855,31 +2535,7 @@
 						quidu      	"5B458BF603B8"
 						annotation 	8
 						autoResize 	TRUE)
-					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Documentos Post-Matricula::Solicita Documentos Post-Pago" @73
-						location   	(608, 320)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@73
-						    location   	(608, 458)
-						    anchor_loc 	1
-						    nlines     	2
-						    max_width  	630
-						    justify    	0
-						    label      	"Solicita Documentos Post-Pago")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5B459E1B0140"
-						height     	118)
-					    (object AssociationViewNew "$UNNAMED$36" @74
+					    (object AssociationViewNew "$UNNAMED$45" @80
 						location   	(370, 575)
 						font       	(object Font
 						    size       	9
@@ -1894,31 +2550,31 @@
 						line_color 	3342489
 						quidu      	"5B459FEB025E"
 						roleview_list 	(list RoleViews
-						    (object RoleView "$UNNAMED$37" @75
-							Parent_View 	@74
+						    (object RoleView "$UNNAMED$46" @81
+							Parent_View 	@80
 							location   	(146, -161)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B459FEC0110"
-							client     	@74
-							supplier   	@73
+							client     	@80
+							supplier   	@78
 							vertices   	(list Points
 							    (370, 575)
 							    (459, 481))
 							line_style 	0)
-						    (object RoleView "$UNNAMED$38" @76
-							Parent_View 	@74
+						    (object RoleView "$UNNAMED$47" @82
+							Parent_View 	@80
 							location   	(146, -161)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B459FEC0112"
-							client     	@74
-							supplier   	@72
+							client     	@80
+							supplier   	@79
 							vertices   	(list Points
 							    (370, 575)
 							    (281, 669))
 							line_style 	0)))
-					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Documentos Post-Matricula::Registra Documentos de Matricula" @77
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Procesos Documentarios::Registra Documentos de Matricula" @83
 						location   	(1440, 400)
 						font       	(object Font
 						    size       	9
@@ -1930,7 +2586,7 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@77
+						    Parent_View 	@83
 						    location   	(1440, 538)
 						    anchor_loc 	1
 						    nlines     	2
@@ -1942,7 +2598,7 @@
 						fill_color 	13434879
 						quidu      	"5B459E3400A0"
 						height     	118)
-					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Documentos Post-Matricula::Genera Lista de Asistencia" @78
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Procesos Documentarios::Genera Lista de Asistencia" @84
 						location   	(1264, 800)
 						font       	(object Font
 						    size       	9
@@ -1954,7 +2610,7 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@78
+						    Parent_View 	@84
 						    location   	(1264, 938)
 						    anchor_loc 	1
 						    nlines     	2
@@ -1966,7 +2622,31 @@
 						fill_color 	13434879
 						quidu      	"5B459E59019B"
 						height     	118)
-					    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Cajero" @79
+					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Procesos Documentarios::Entrega Boleta" @85
+						location   	(1168, 1376)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@85
+						    location   	(1168, 1514)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	630
+						    justify    	0
+						    label      	"Entrega Boleta")
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"5B459F080001"
+						height     	118)
+					    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Cajero" @86
 						ShowCompartmentStereotypes 	TRUE
 						IncludeAttribute 	TRUE
 						IncludeOperation 	TRUE
@@ -1981,11 +2661,11 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@79
+						    Parent_View 	@86
 						    location   	(1744, 1024)
 						    anchor_loc 	1
 						    nlines     	2
-						    max_width  	490
+						    max_width  	325
 						    justify    	0
 						    label      	"Cajero")
 						icon       	"Actor"
@@ -1994,7 +2674,7 @@
 						quidu      	"5B458BFD0330"
 						annotation 	8
 						autoResize 	TRUE)
-					    (object AssociationViewNew "$UNNAMED$39" @80
+					    (object AssociationViewNew "$UNNAMED$48" @87
 						location   	(1617, 672)
 						font       	(object Font
 						    size       	9
@@ -2009,31 +2689,31 @@
 						line_color 	3342489
 						quidu      	"5B459FF300C6"
 						roleview_list 	(list RoleViews
-						    (object RoleView "$UNNAMED$40" @81
-							Parent_View 	@80
+						    (object RoleView "$UNNAMED$49" @88
+							Parent_View 	@87
 							location   	(-127, -192)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B459FF302FF"
-							client     	@80
-							supplier   	@77
+							client     	@87
+							supplier   	@83
 							vertices   	(list Points
 							    (1617, 672)
 							    (1545, 561))
 							line_style 	0)
-						    (object RoleView "$UNNAMED$41" @82
-							Parent_View 	@80
+						    (object RoleView "$UNNAMED$50" @89
+							Parent_View 	@87
 							location   	(-127, -192)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B459FF30301"
-							client     	@80
-							supplier   	@79
+							client     	@87
+							supplier   	@86
 							vertices   	(list Points
 							    (1617, 672)
 							    (1690, 783))
 							line_style 	0)))
-					    (object AssociationViewNew "$UNNAMED$42" @83
+					    (object AssociationViewNew "$UNNAMED$51" @90
 						location   	(1528, 833)
 						font       	(object Font
 						    size       	9
@@ -2048,55 +2728,31 @@
 						line_color 	3342489
 						quidu      	"5B459FF50126"
 						roleview_list 	(list RoleViews
-						    (object RoleView "$UNNAMED$43" @84
-							Parent_View 	@83
+						    (object RoleView "$UNNAMED$52" @91
+							Parent_View 	@90
 							location   	(-216, -31)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B459FF5031F"
-							client     	@83
-							supplier   	@78
+							client     	@90
+							supplier   	@84
 							vertices   	(list Points
 							    (1528, 833)
 							    (1372, 812))
 							line_style 	0)
-						    (object RoleView "$UNNAMED$44" @85
-							Parent_View 	@83
+						    (object RoleView "$UNNAMED$53" @92
+							Parent_View 	@90
 							location   	(-216, -31)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B459FF50321"
-							client     	@83
-							supplier   	@79
+							client     	@90
+							supplier   	@86
 							vertices   	(list Points
 							    (1528, 833)
 							    (1684, 854))
 							line_style 	0)))
-					    (object UseCaseView "Use Case View::Use-Case Model::Actors::Gestion de Documentos Post-Matricula::Entrega Boleta" @86
-						location   	(1168, 1376)
-						font       	(object Font
-						    size       	9
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@86
-						    location   	(1168, 1514)
-						    anchor_loc 	1
-						    nlines     	2
-						    max_width  	630
-						    justify    	0
-						    label      	"Entrega Boleta")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5B459F080001"
-						height     	118)
-					    (object AssociationViewNew "$UNNAMED$45" @87
+					    (object AssociationViewNew "$UNNAMED$54" @93
 						location   	(1455, 1115)
 						font       	(object Font
 						    size       	9
@@ -2111,31 +2767,31 @@
 						line_color 	3342489
 						quidu      	"5B459FF70124"
 						roleview_list 	(list RoleViews
-						    (object RoleView "$UNNAMED$46" @88
-							Parent_View 	@87
+						    (object RoleView "$UNNAMED$55" @94
+							Parent_View 	@93
 							location   	(-289, 251)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B459FF703B0"
-							client     	@87
-							supplier   	@86
+							client     	@93
+							supplier   	@85
 							vertices   	(list Points
 							    (1455, 1115)
 							    (1228, 1318))
 							line_style 	0)
-						    (object RoleView "$UNNAMED$47" @89
-							Parent_View 	@87
+						    (object RoleView "$UNNAMED$56" @95
+							Parent_View 	@93
 							location   	(-289, 251)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"5B459FF703B2"
-							client     	@87
-							supplier   	@79
+							client     	@93
+							supplier   	@86
 							vertices   	(list Points
 							    (1455, 1115)
 							    (1683, 913))
 							line_style 	0)))
-					    (object DependencyView "" @90
+					    (object DependencyView "" @96
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -2145,8 +2801,8 @@
 						    strike     	FALSE
 						    color      	0
 						    default_color 	TRUE)
-						stereotype 	(object SegLabel @91
-						    Parent_View 	@90
+						stereotype 	(object SegLabel @97
+						    Parent_View 	@96
 						    location   	(911, 1136)
 						    font       	(object Font
 							size       	9
@@ -2168,13 +2824,13 @@
 						    orientation 	1)
 						line_color 	3342489
 						quidu      	"5B45A016034F"
-						client     	@73
-						supplier   	@86
+						client     	@78
+						supplier   	@85
 						vertices   	(list Points
 						    (692, 481)
 						    (1135, 1317))
 						line_style 	0)
-					    (object DependencyView "" @92
+					    (object DependencyView "" @98
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -2184,8 +2840,8 @@
 						    strike     	FALSE
 						    color      	0
 						    default_color 	TRUE)
-						stereotype 	(object SegLabel @93
-						    Parent_View 	@92
+						stereotype 	(object SegLabel @99
+						    Parent_View 	@98
 						    location   	(1168, 638)
 						    font       	(object Font
 							size       	9
@@ -2207,13 +2863,13 @@
 						    orientation 	0)
 						line_color 	3342489
 						quidu      	"5B45A0190228"
-						client     	@73
-						supplier   	@78
+						client     	@78
+						supplier   	@84
 						vertices   	(list Points
 						    (829, 481)
 						    (1186, 742))
 						line_style 	0)
-					    (object DependencyView "" @94
+					    (object DependencyView "" @100
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -2223,8 +2879,8 @@
 						    strike     	FALSE
 						    color      	0
 						    default_color 	TRUE)
-						stereotype 	(object SegLabel @95
-						    Parent_View 	@94
+						stereotype 	(object SegLabel @101
+						    Parent_View 	@100
 						    location   	(1050, 317)
 						    font       	(object Font
 							size       	9
@@ -2246,8 +2902,8 @@
 						    orientation 	0)
 						line_color 	3342489
 						quidu      	"5B45A0210107"
-						client     	@73
-						supplier   	@77
+						client     	@78
+						supplier   	@83
 						vertices   	(list Points
 						    (716, 329)
 						    (1330, 387))
@@ -2262,7 +2918,7 @@
 				origin_x   	0
 				origin_y   	0
 				items      	(list diagram_item_list
-				    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Alumno" @96
+				    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Alumno" @102
 					ShowCompartmentStereotypes 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
@@ -2277,7 +2933,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@96
+					    Parent_View 	@102
 					    location   	(288, 1040)
 					    anchor_loc 	1
 					    nlines     	2
@@ -2290,7 +2946,7 @@
 					quidu      	"5B458BF603B8"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Cajero" @97
+				    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Cajero" @103
 					ShowCompartmentStereotypes 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
@@ -2305,11 +2961,11 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@97
+					    Parent_View 	@103
 					    location   	(1040, 1040)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	328
+					    max_width  	325
 					    justify    	0
 					    label      	"Cajero")
 					icon       	"Actor"
@@ -2318,7 +2974,7 @@
 					quidu      	"5B458BFD0330"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Agente Call Center" @98
+				    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Agente Call Center" @104
 					ShowCompartmentStereotypes 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
@@ -2333,11 +2989,11 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@98
+					    Parent_View 	@104
 					    location   	(672, 1024)
 					    anchor_loc 	1
-					    nlines     	1
-					    max_width  	331
+					    nlines     	2
+					    max_width  	325
 					    justify    	0
 					    label      	"Agente Call Center")
 					icon       	"Actor"
@@ -2346,7 +3002,7 @@
 					quidu      	"5B458C07017C"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Administrador del Sistema" @99
+				    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Administrador del Sistema" @105
 					ShowCompartmentStereotypes 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
@@ -2361,11 +3017,11 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@99
+					    Parent_View 	@105
 					    location   	(1424, 784)
 					    anchor_loc 	1
-					    nlines     	1
-					    max_width  	465
+					    nlines     	2
+					    max_width  	455
 					    justify    	0
 					    label      	"Administrador del Sistema")
 					icon       	"Actor"
@@ -2374,7 +3030,7 @@
 					quidu      	"5B458C16016D"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Usuario" @100
+				    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Usuario" @106
 					ShowCompartmentStereotypes 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
@@ -2389,11 +3045,11 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@100
+					    Parent_View 	@106
 					    location   	(976, 336)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	468
+					    max_width  	325
 					    justify    	0
 					    label      	"Usuario")
 					icon       	"Actor"
@@ -2402,67 +3058,67 @@
 					quidu      	"5B458CA3039B"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object InheritTreeView "" @101
+				    (object InheritTreeView "" @107
 					location   	(976, 450)
 					line_color 	3342489
 					fill_color 	13434879
-					supplier   	@100
+					supplier   	@106
 					vertices   	(list Points
 					    (976, 450)
 					    (976, 359)))
-				    (object InheritView "" @102
+				    (object InheritView "" @108
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5B458CA9014B"
-					client     	@96
-					supplier   	@100
+					client     	@102
+					supplier   	@106
 					vertices   	(list Points
 					    (345, 800)
 					    (345, 450))
 					line_style 	3
 					origin_attachment 	(345, 800)
 					terminal_attachment 	(345, 450)
-					drawSupplier 	@101)
-				    (object InheritView "" @103
+					drawSupplier 	@107)
+				    (object InheritView "" @109
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5B458CAB0313"
-					client     	@98
-					supplier   	@100
+					client     	@104
+					supplier   	@106
 					vertices   	(list Points
 					    (672, 784)
 					    (672, 450))
 					line_style 	3
 					origin_attachment 	(672, 784)
 					terminal_attachment 	(672, 450)
-					drawSupplier 	@101)
-				    (object InheritView "" @104
+					drawSupplier 	@107)
+				    (object InheritView "" @110
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5B458CAE02C3"
-					client     	@97
-					supplier   	@100
+					client     	@103
+					supplier   	@106
 					vertices   	(list Points
 					    (1031, 800)
 					    (1031, 450))
 					line_style 	3
 					origin_attachment 	(1031, 800)
 					terminal_attachment 	(1031, 450)
-					drawSupplier 	@101)
-				    (object InheritView "" @105
+					drawSupplier 	@107)
+				    (object InheritView "" @111
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5B458CB200CC"
-					client     	@99
-					supplier   	@100
+					client     	@105
+					supplier   	@106
 					vertices   	(list Points
 					    (1454, 544)
 					    (1454, 450))
 					line_style 	3
 					origin_attachment 	(1454, 544)
 					terminal_attachment 	(1454, 450)
-					drawSupplier 	@101)
-				    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Sistema" @106
+					drawSupplier 	@107)
+				    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::Sistema" @112
 					ShowCompartmentStereotypes 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
@@ -2477,11 +3133,11 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@106
+					    Parent_View 	@112
 					    location   	(1712, 1296)
 					    anchor_loc 	1
 					    nlines     	2
-					    max_width  	475
+					    max_width  	325
 					    justify    	0
 					    label      	"Sistema")
 					icon       	"Actor"
@@ -2499,7 +3155,7 @@
 				origin_x   	0
 				origin_y   	0
 				items      	(list diagram_item_list
-				    (object CategoryView "Use Case View::Use-Case Model::Actors::Seguridad" @107
+				    (object CategoryView "Use Case View::Use-Case Model::Actors::Seguridad" @113
 					location   	(1088, 928)
 					font       	(object Font
 					    size       	9
@@ -2511,7 +3167,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@107
+					    Parent_View 	@113
 					    location   	(944, 844)
 					    fill_color 	13434879
 					    nlines     	2
@@ -2524,7 +3180,7 @@
 					quidu      	"5B458DB30115"
 					width      	300
 					height     	180)
-				    (object CategoryView "Use Case View::Use-Case Model::Actors::Gestion de Matricula" @108
+				    (object CategoryView "Use Case View::Use-Case Model::Actors::Gestion de Matricula" @114
 					location   	(272, 384)
 					font       	(object Font
 					    size       	9
@@ -2536,7 +3192,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@108
+					    Parent_View 	@114
 					    location   	(128, 300)
 					    fill_color 	13434879
 					    nlines     	2
@@ -2549,7 +3205,7 @@
 					quidu      	"5B45901101AC"
 					width      	300
 					height     	180)
-				    (object CategoryView "Use Case View::Use-Case Model::Actors::Gestion de Pago" @109
+				    (object CategoryView "Use Case View::Use-Case Model::Actors::Gestion de Pago" @115
 					location   	(272, 896)
 					font       	(object Font
 					    size       	9
@@ -2561,7 +3217,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@109
+					    Parent_View 	@115
 					    location   	(128, 812)
 					    fill_color 	13434879
 					    nlines     	2
@@ -2574,7 +3230,7 @@
 					quidu      	"5B45901C00EF"
 					width      	300
 					height     	180)
-				    (object CategoryView "Use Case View::Use-Case Model::Actors::Gestion de Documentos Post-Matricula" @110
+				    (object CategoryView "Use Case View::Use-Case Model::Actors::Gestion de Procesos Documentarios" @116
 					location   	(1088, 384)
 					font       	(object Font
 					    size       	9
@@ -2586,75 +3242,75 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@110
-					    location   	(861, 300)
+					    Parent_View 	@116
+					    location   	(892, 300)
 					    fill_color 	13434879
 					    nlines     	2
-					    max_width  	454
+					    max_width  	392
 					    justify    	0
-					    label      	"Gestion de Documentos Post-Matricula")
+					    label      	"Gestion de Procesos Documentarios")
 					icon_style 	"Icon"
 					line_color 	3342489
 					fill_color 	13434879
 					quidu      	"5B45915F0293"
-					width      	466
+					width      	404
 					height     	180)
-				    (object ImportView "" @111
+				    (object ImportView "" @117
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5B4593AA01CE"
-					client     	@108
-					supplier   	@107
+					client     	@114
+					supplier   	@113
 					vertices   	(list Points
 					    (406, 474)
 					    (937, 827))
 					line_style 	0)
-				    (object ImportView "" @112
+				    (object ImportView "" @118
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5B4593AC03B9"
-					client     	@109
-					supplier   	@107
+					client     	@115
+					supplier   	@113
 					vertices   	(list Points
 					    (422, 901)
 					    (937, 922))
 					line_style 	0)
-				    (object ImportView "" @113
+				    (object ImportView "" @119
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5B4593CF006F"
-					client     	@110
-					supplier   	@107
+					client     	@116
+					supplier   	@113
 					vertices   	(list Points
 					    (1088, 474)
 					    (1088, 783))
 					line_style 	0)
-				    (object ImportView "" @114
+				    (object ImportView "" @120
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5B4593D50026"
-					client     	@108
-					supplier   	@110
+					client     	@114
+					supplier   	@116
 					vertices   	(list Points
 					    (422, 384)
-					    (854, 384))
+					    (885, 384))
 					line_style 	0)
-				    (object ImportView "" @115
+				    (object ImportView "" @121
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5B4593DA0310"
-					client     	@108
-					supplier   	@109
+					client     	@114
+					supplier   	@115
 					vertices   	(list Points
 					    (272, 474)
 					    (272, 751))
 					line_style 	0)
-				    (object ImportView "" @116
+				    (object ImportView "" @122
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5B4593DF006E"
-					client     	@109
-					supplier   	@110
+					client     	@115
+					supplier   	@116
 					vertices   	(list Points
 					    (422, 801)
 					    (944, 474))
@@ -2681,6 +3337,35 @@
 				exportControl 	"Public"
 				logical_models 	(list unit_reference_list
 				    (object UseCase "<Use Case Name>"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
 					quid       	"34E37FB203D4"
 					documentation 	
 |<<The brief description of the use case is entered here.  For guidance on what should go in this description, see the following Rational Unified Process references:
@@ -2699,7 +3384,7 @@
 						origin_x   	0
 						origin_y   	0
 						items      	(list diagram_item_list
-						    (object NoteView @117
+						    (object NoteView @123
 							location   	(480, 400)
 							font       	(object Font
 							    size       	9
@@ -2711,7 +3396,7 @@
 							    color      	0
 							    default_color 	TRUE)
 							label      	(object ItemLabel
-							    Parent_View 	@117
+							    Parent_View 	@123
 							    location   	(33, 35)
 							    fill_color 	13434879
 							    nlines     	15
@@ -2732,7 +3417,7 @@
 							fill_color 	13434879
 							width      	919
 							height     	743)
-						    (object NoteView @118
+						    (object NoteView @124
 							location   	(1344, 160)
 							font       	(object Font
 							    size       	9
@@ -2744,7 +3429,7 @@
 							    color      	0
 							    default_color 	TRUE)
 							label      	(object ItemLabel
-							    Parent_View 	@118
+							    Parent_View 	@124
 							    location   	(1006, 29)
 							    fill_color 	13434879
 							    nlines     	5
@@ -2761,7 +3446,7 @@
 							fill_color 	13434879
 							width      	700
 							height     	275)
-						    (object UseCaseView "Use Case View::Use-Case Model::Use Cases::<Use Case Name>::<Use Case Name>" @119
+						    (object UseCaseView "Use Case View::Use-Case Model::Use Cases::<Use Case Name>::<Use Case Name>" @125
 							location   	(1088, 1024)
 							font       	(object Font
 							    size       	9
@@ -2773,7 +3458,7 @@
 							    color      	0
 							    default_color 	TRUE)
 							label      	(object ItemLabel
-							    Parent_View 	@119
+							    Parent_View 	@125
 							    location   	(1088, 1162)
 							    anchor_loc 	1
 							    nlines     	2
@@ -2785,7 +3470,7 @@
 							fill_color 	13434879
 							quidu      	"34E37FB203D4"
 							autoResize 	TRUE)
-						    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::<Actor Name>" @120
+						    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::<Actor Name>" @126
 							ShowCompartmentStereotypes 	TRUE
 							IncludeAttribute 	TRUE
 							IncludeOperation 	TRUE
@@ -2800,7 +3485,7 @@
 							    color      	0
 							    default_color 	TRUE)
 							label      	(object ItemLabel
-							    Parent_View 	@120
+							    Parent_View 	@126
 							    location   	(448, 1184)
 							    anchor_loc 	1
 							    nlines     	2
@@ -2813,7 +3498,7 @@
 							quidu      	"353D5816026C"
 							annotation 	8
 							autoResize 	TRUE)
-						    (object AssociationViewNew "" @121
+						    (object AssociationViewNew "" @127
 							location   	(741, 1024)
 							font       	(object Font
 							    size       	9
@@ -2824,8 +3509,8 @@
 							    strike     	FALSE
 							    color      	0
 							    default_color 	TRUE)
-							stereotype 	(object SegLabel @122
-							    Parent_View 	@121
+							stereotype 	(object SegLabel @128
+							    Parent_View 	@127
 							    location   	(741, 1060)
 							    font       	(object Font
 								size       	9
@@ -2848,40 +3533,40 @@
 							line_color 	3342489
 							quidu      	"35C0ED3A00F0"
 							roleview_list 	(list RoleViews
-							    (object RoleView "" @123
-								Parent_View 	@121
+							    (object RoleView "" @129
+								Parent_View 	@127
 								location   	(501, -160)
 								stereotype 	TRUE
 								line_color 	3342489
 								quidu      	"35C0ED3B0118"
-								client     	@121
-								supplier   	@119
+								client     	@127
+								supplier   	@125
 								vertices   	(list Points
 								    (741, 1024)
 								    (976, 1024))
 								line_style 	0)
-							    (object RoleView "" @124
-								Parent_View 	@121
+							    (object RoleView "" @130
+								Parent_View 	@127
 								location   	(501, -160)
 								stereotype 	TRUE
 								line_color 	3342489
 								quidu      	"35C0ED3B0119"
-								client     	@121
-								supplier   	@120
+								client     	@127
+								supplier   	@126
 								vertices   	(list Points
 								    (741, 1024)
 								    (505, 1024))
 								line_style 	0)))))))
-				    (object Association "$UNNAMED$48"
+				    (object Association "$UNNAMED$57"
 					quid       	"35C0ED3A00F0"
 					stereotype 	"communicate"
 					roles      	(list role_list
-					    (object Role "$UNNAMED$49"
+					    (object Role "$UNNAMED$58"
 						quid       	"35C0ED3B0118"
 						supplier   	"Use Case View::Use-Case Model::Use Cases::<Use Case Name>::<Use Case Name>"
 						quidu      	"34E37FB203D4"
 						is_navigable 	TRUE)
-					    (object Role "$UNNAMED$50"
+					    (object Role "$UNNAMED$59"
 						quid       	"35C0ED3B0119"
 						supplier   	"Use Case View::Use-Case Model::Actors::<Actor Name>"
 						quidu      	"353D5816026C"))))
@@ -2899,6 +3584,35 @@
 					exportControl 	"Public"
 					logical_models 	(list unit_reference_list
 					    (object UseCase "<anIncludedUseCase>"
+						attributes 	(list Attribute_Set
+						    (object Attribute
+							tool       	"RequisitePro"
+							name       	"ReqProProjectPath"
+							value      	"")
+						    (object Attribute
+							tool       	"RequisitePro"
+							name       	"ReqProProjectGuid"
+							value      	"")
+						    (object Attribute
+							tool       	"RequisitePro"
+							name       	"ReqProDocumentName"
+							value      	"")
+						    (object Attribute
+							tool       	"RequisitePro"
+							name       	"ReqProDocumentGuid"
+							value      	"")
+						    (object Attribute
+							tool       	"RequisitePro"
+							name       	"ReqProDocType"
+							value      	"")
+						    (object Attribute
+							tool       	"RequisitePro"
+							name       	"ReqProReqType"
+							value      	"")
+						    (object Attribute
+							tool       	"RequisitePro"
+							name       	"ReqProRequirementId"
+							value      	""))
 						quid       	"37BB997903CB"))
 					logical_presentations 	(list unit_reference_list)))
 				logical_presentations 	(list unit_reference_list)))
@@ -2913,7 +3627,7 @@
 				origin_x   	0
 				origin_y   	0
 				items      	(list diagram_item_list
-				    (object NoteView @125
+				    (object NoteView @131
 					location   	(432, 384)
 					font       	(object Font
 					    size       	9
@@ -2925,7 +3639,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@125
+					    Parent_View 	@131
 					    location   	(44, 28)
 					    fill_color 	13434879
 					    nlines     	15
@@ -2946,7 +3660,7 @@
 					fill_color 	13434879
 					width      	800
 					height     	725)
-				    (object NoteView @126
+				    (object NoteView @132
 					location   	(1216, 160)
 					font       	(object Font
 					    size       	9
@@ -2958,7 +3672,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@126
+					    Parent_View 	@132
 					    location   	(878, 29)
 					    fill_color 	13434879
 					    nlines     	5
@@ -2986,7 +3700,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object NoteView @127
+			    (object NoteView @133
 				location   	(448, 304)
 				font       	(object Font
 				    size       	9
@@ -2998,7 +3712,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@127
+				    Parent_View 	@133
 				    location   	(38, 23)
 				    fill_color 	13434879
 				    nlines     	12
@@ -3019,7 +3733,7 @@
 				fill_color 	13434879
 				width      	844
 				height     	574)
-			    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::<Actor Name>" @128
+			    (object ClassView "Class" "Use Case View::Use-Case Model::Actors::<Actor Name>" @134
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -3034,7 +3748,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@128
+				    Parent_View 	@134
 				    location   	(528, 1136)
 				    anchor_loc 	1
 				    nlines     	2
@@ -3047,7 +3761,7 @@
 				quidu      	"353D5816026C"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object UseCaseView "Use Case View::Use-Case Model::Use Cases::<Use Case Name>::<Use Case Name>" @129
+			    (object UseCaseView "Use Case View::Use-Case Model::Use Cases::<Use Case Name>::<Use Case Name>" @135
 				location   	(1264, 976)
 				font       	(object Font
 				    size       	9
@@ -3059,7 +3773,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@129
+				    Parent_View 	@135
 				    location   	(1264, 1114)
 				    anchor_loc 	1
 				    nlines     	2
@@ -3071,7 +3785,7 @@
 				fill_color 	13434879
 				quidu      	"34E37FB203D4"
 				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$48" @130
+			    (object AssociationViewNew "$UNNAMED$57" @136
 				location   	(868, 976)
 				font       	(object Font
 				    size       	9
@@ -3082,8 +3796,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				stereotype 	(object SegLabel @131
-				    Parent_View 	@130
+				stereotype 	(object SegLabel @137
+				    Parent_View 	@136
 				    location   	(886, 1013)
 				    font       	(object Font
 					size       	9
@@ -3106,8 +3820,8 @@
 				line_color 	3342489
 				quidu      	"35C0ED3A00F0"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$50" @132
-					Parent_View 	@130
+				    (object RoleView "$UNNAMED$59" @138
+					Parent_View 	@136
 					location   	(-284, 48)
 					font       	(object Font
 					    size       	9
@@ -3118,8 +3832,8 @@
 					    strike     	FALSE
 					    color      	0
 					    default_color 	TRUE)
-					label      	(object SegLabel @133
-					    Parent_View 	@132
+					label      	(object SegLabel @139
+					    Parent_View 	@138
 					    location   	(643, 935)
 					    font       	(object Font
 						size       	9
@@ -3143,14 +3857,14 @@
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"35C0ED3B0119"
-					client     	@130
-					supplier   	@128
+					client     	@136
+					supplier   	@134
 					vertices   	(list Points
 					    (868, 976)
 					    (585, 976))
 					line_style 	0)
-				    (object RoleView "$UNNAMED$49" @134
-					Parent_View 	@130
+				    (object RoleView "$UNNAMED$58" @140
+					Parent_View 	@136
 					location   	(-284, 48)
 					font       	(object Font
 					    size       	9
@@ -3161,8 +3875,8 @@
 					    strike     	FALSE
 					    color      	0
 					    default_color 	TRUE)
-					label      	(object SegLabel @135
-					    Parent_View 	@134
+					label      	(object SegLabel @141
+					    Parent_View 	@140
 					    location   	(1096, 935)
 					    font       	(object Font
 						size       	9
@@ -3186,8 +3900,8 @@
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"35C0ED3B0118"
-					client     	@130
-					supplier   	@129
+					client     	@136
+					supplier   	@135
 					vertices   	(list Points
 					    (868, 976)
 					    (1154, 976))
@@ -3205,7 +3919,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object CategoryView "Use Case View::Use-Case Model" @136
+		    (object CategoryView "Use Case View::Use-Case Model" @142
 			location   	(384, 880)
 			font       	(object Font
 			    size       	10
@@ -3217,7 +3931,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@136
+			    Parent_View 	@142
 			    location   	(189, 779)
 			    fill_color 	13434879
 			    nlines     	2
@@ -3230,7 +3944,7 @@
 			quidu      	"35B677F4010E"
 			width      	402
 			height     	215)
-		    (object NoteView @137
+		    (object NoteView @143
 			location   	(1040, 560)
 			font       	(object Font
 			    size       	10
@@ -3242,7 +3956,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@137
+			    Parent_View 	@143
 			    location   	(813, 358)
 			    fill_color 	13434879
 			    nlines     	9
@@ -3253,7 +3967,7 @@
 			fill_color 	13434879
 			width      	479
 			height     	416)
-		    (object CategoryView "Use Case View::Business Use-Case Model" @138
+		    (object CategoryView "Use Case View::Business Use-Case Model" @144
 			location   	(384, 320)
 			font       	(object Font
 			    size       	9
@@ -3265,7 +3979,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@138
+			    Parent_View 	@144
 			    location   	(189, 229)
 			    fill_color 	13434879
 			    nlines     	2
@@ -3278,21 +3992,21 @@
 			quidu      	"35B677D701B8"
 			width      	403
 			height     	194)
-		    (object ImportView "" @139
+		    (object ImportView "" @145
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"35C633DA030C"
-			client     	@136
-			supplier   	@138
+			client     	@142
+			supplier   	@144
 			vertices   	(list Points
 			    (384, 718)
 			    (384, 417))
 			line_style 	0)
-		    (object AttachView "" @140
+		    (object AttachView "" @146
 			stereotype 	TRUE
 			line_color 	3342489
-			client     	@139
-			supplier   	@137
+			client     	@145
+			supplier   	@143
 			vertices   	(list Points
 			    (384, 567)
 			    (800, 561))
@@ -3443,16 +4157,16 @@
 			
 			exportControl 	"Public"
 			logical_models 	(list unit_reference_list
-			    (object Association "$UNNAMED$51"
+			    (object Association "$UNNAMED$60"
 				quid       	"35409E9D02A8"
 				stereotype 	"realize"
 				roles      	(list role_list
-				    (object Role "$UNNAMED$52"
+				    (object Role "$UNNAMED$61"
 					quid       	"35409E9E0294"
 					supplier   	"Use Case View::Use-Case Model::Use Cases::<Use Case Name>::<Use Case Name>"
 					quidu      	"34E37FB203D4"
 					is_navigable 	TRUE)
-				    (object Role "$UNNAMED$53"
+				    (object Role "$UNNAMED$62"
 					quid       	"35409E9E0295"
 					supplier   	"Logical View::Design Model::Use-Case Realizations::<Use-Case Name>::<Use-Case Name>"
 					quidu      	"352F38180276")))
@@ -3462,6 +4176,35 @@
 				exportControl 	"Public"
 				logical_models 	(list unit_reference_list
 				    (object UseCase "<Use-Case Name>"
+					attributes 	(list Attribute_Set
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectPath"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProProjectGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentName"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocumentGuid"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProDocType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProReqType"
+						value      	"")
+					    (object Attribute
+						tool       	"RequisitePro"
+						name       	"ReqProRequirementId"
+						value      	""))
 					quid       	"352F38180276"
 					documentation 	
 |This will be a stereotype on a usecase. 
@@ -3469,9 +4212,9 @@
 					
 					stereotype 	"use-case realization"
 					logical_models 	(list unit_reference_list
-					    (object Mechanism @141
+					    (object Mechanism @147
 						logical_models 	(list unit_reference_list))
-					    (object Mechanism @142
+					    (object Mechanism @148
 						logical_models 	(list unit_reference_list)))
 					logical_presentations 	(list unit_reference_list
 					    (object ClassDiagram "<Use Case Name> -  Realize Dependencies"
@@ -3495,7 +4238,7 @@
 						origin_y   	0
 						items      	(list diagram_item_list))
 					    (object InteractionDiagram "<Use Case Name> -  Basic Flow"
-						mechanism_ref 	@141
+						mechanism_ref 	@147
 						quid       	"35081E3603A2"
 						title      	"<Use Case Name> -  Basic Flow"
 						zoom       	100
@@ -3505,7 +4248,7 @@
 						origin_y   	0
 						items      	(list diagram_item_list))
 					    (object InteractionDiagram "<Use Case Name> -  <Flow Type>"
-						mechanism_ref 	@142
+						mechanism_ref 	@148
 						quid       	"3540A0B901AE"
 						title      	"<Use Case Name> -  <Flow Type>"
 						zoom       	100
@@ -3525,7 +4268,7 @@
 					origin_x   	0
 					origin_y   	0
 					items      	(list diagram_item_list
-					    (object NoteView @143
+					    (object NoteView @149
 						location   	(704, 144)
 						font       	(object Font
 						    size       	9
@@ -3537,7 +4280,7 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@143
+						    Parent_View 	@149
 						    location   	(38, 25)
 						    fill_color 	13434879
 						    nlines     	5
@@ -3551,7 +4294,7 @@
 						fill_color 	13434879
 						width      	1356
 						height     	250)
-					    (object UseCaseView "Use Case View::Use-Case Model::Use Cases::<Use Case Name>::<Use Case Name>" @144
+					    (object UseCaseView "Use Case View::Use-Case Model::Use Cases::<Use Case Name>::<Use Case Name>" @150
 						location   	(1152, 528)
 						font       	(object Font
 						    size       	9
@@ -3563,7 +4306,7 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@144
+						    Parent_View 	@150
 						    location   	(1152, 666)
 						    anchor_loc 	1
 						    nlines     	2
@@ -3575,7 +4318,7 @@
 						fill_color 	13434879
 						quidu      	"34E37FB203D4"
 						autoResize 	TRUE)
-					    (object UseCaseView "Logical View::Design Model::Use-Case Realizations::<Use-Case Name>::<Use-Case Name>" @145
+					    (object UseCaseView "Logical View::Design Model::Use-Case Realizations::<Use-Case Name>::<Use-Case Name>" @151
 						location   	(608, 960)
 						font       	(object Font
 						    size       	9
@@ -3587,7 +4330,7 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@145
+						    Parent_View 	@151
 						    location   	(608, 1148)
 						    anchor_loc 	1
 						    nlines     	2
@@ -3595,7 +4338,7 @@
 						    justify    	0
 						    label      	"<Use-Case Name>")
 						stereotype 	(object ItemLabel
-						    Parent_View 	@145
+						    Parent_View 	@151
 						    location   	(608, 1078)
 						    anchor     	10
 						    anchor_loc 	1
@@ -3609,7 +4352,7 @@
 						fill_color 	13434879
 						quidu      	"352F38180276"
 						autoResize 	TRUE)
-					    (object AssociationViewNew "$UNNAMED$51" @146
+					    (object AssociationViewNew "$UNNAMED$60" @152
 						location   	(876, 741)
 						font       	(object Font
 						    size       	9
@@ -3620,8 +4363,8 @@
 						    strike     	FALSE
 						    color      	0
 						    default_color 	TRUE)
-						stereotype 	(object SegLabel @147
-						    Parent_View 	@146
+						stereotype 	(object SegLabel @153
+						    Parent_View 	@152
 						    location   	(874, 746)
 						    font       	(object Font
 							size       	9
@@ -3644,26 +4387,26 @@
 						line_color 	3342489
 						quidu      	"35409E9D02A8"
 						roleview_list 	(list RoleViews
-						    (object RoleView "$UNNAMED$52" @148
-							Parent_View 	@146
+						    (object RoleView "$UNNAMED$61" @154
+							Parent_View 	@152
 							location   	(236, -539)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"35409E9E0294"
-							client     	@146
-							supplier   	@144
+							client     	@152
+							supplier   	@150
 							vertices   	(list Points
 							    (876, 741)
 							    (943, 689))
 							line_style 	0)
-						    (object RoleView "$UNNAMED$53" @149
-							Parent_View 	@146
+						    (object RoleView "$UNNAMED$62" @155
+							Parent_View 	@152
 							location   	(236, -539)
 							stereotype 	TRUE
 							line_color 	3342489
 							quidu      	"35409E9E0295"
-							client     	@146
-							supplier   	@145
+							client     	@152
+							supplier   	@151
 							vertices   	(list Points
 							    (876, 741)
 							    (678, 899))
@@ -3682,16 +4425,16 @@
 				quid       	"35DB3CB002BC"
 				documentation 	"This is a sub-process or thread within the <name of process of which this thread is a sub-process> process which handles <enter a description of what this thread does>.  A separate thread was chosen for this to be able to <enter the rationale for creating a separate thread>."
 				stereotype 	"thread")
-			    (object Association "$UNNAMED$54"
+			    (object Association "$UNNAMED$63"
 				quid       	"35DB3E72017C"
 				roles      	(list role_list
-				    (object Role "$UNNAMED$55"
+				    (object Role "$UNNAMED$64"
 					quid       	"35DB3E73005A"
 					supplier   	"Logical View::Design Model::Process View::<Process Name>"
 					quidu      	"35DB3C8302D0"
 					is_navigable 	TRUE
 					is_aggregate 	TRUE)
-				    (object Role "$UNNAMED$56"
+				    (object Role "$UNNAMED$65"
 					quid       	"35DB3E730096"
 					supplier   	"Logical View::Design Model::Process View::<Thread Name>"
 					quidu      	"35DB3CB002BC"
@@ -3708,7 +4451,7 @@
 				origin_x   	0
 				origin_y   	0
 				items      	(list diagram_item_list
-				    (object ClassView "Class" "Logical View::Design Model::Process View::<Process Name>" @150
+				    (object ClassView "Class" "Logical View::Design Model::Process View::<Process Name>" @156
 					ShowCompartmentStereotypes 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
@@ -3723,7 +4466,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@150
+					    Parent_View 	@156
 					    location   	(122, 436)
 					    fill_color 	13434879
 					    nlines     	1
@@ -3731,7 +4474,7 @@
 					    justify    	0
 					    label      	"<Process Name>")
 					stereotype 	(object ItemLabel
-					    Parent_View 	@150
+					    Parent_View 	@156
 					    location   	(122, 389)
 					    fill_color 	13434879
 					    anchor     	10
@@ -3747,7 +4490,7 @@
 					height     	172
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Logical View::Design Model::Process View::<Thread Name>" @151
+				    (object ClassView "Class" "Logical View::Design Model::Process View::<Thread Name>" @157
 					ShowCompartmentStereotypes 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
@@ -3762,7 +4505,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@151
+					    Parent_View 	@157
 					    location   	(740, 436)
 					    fill_color 	13434879
 					    nlines     	1
@@ -3770,7 +4513,7 @@
 					    justify    	0
 					    label      	"<Thread Name>")
 					stereotype 	(object ItemLabel
-					    Parent_View 	@151
+					    Parent_View 	@157
 					    location   	(740, 389)
 					    fill_color 	13434879
 					    anchor     	10
@@ -3786,32 +4529,32 @@
 					height     	172
 					annotation 	8
 					autoResize 	TRUE)
-				    (object AssociationViewNew "$UNNAMED$54" @152
+				    (object AssociationViewNew "$UNNAMED$63" @158
 					location   	(596, 464)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"35DB3E72017C"
 					roleview_list 	(list RoleViews
-					    (object RoleView "$UNNAMED$55" @153
-						Parent_View 	@152
+					    (object RoleView "$UNNAMED$64" @159
+						Parent_View 	@158
 						location   	(-300, 0)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"35DB3E73005A"
-						client     	@152
-						supplier   	@150
+						client     	@158
+						supplier   	@156
 						vertices   	(list Points
 						    (596, 464)
 						    (463, 464))
 						line_style 	0)
-					    (object RoleView "$UNNAMED$56" @154
-						Parent_View 	@152
+					    (object RoleView "$UNNAMED$65" @160
+						Parent_View 	@158
 						location   	(-300, 0)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"35DB3E730096"
-						client     	@152
-						supplier   	@151
+						client     	@158
+						supplier   	@157
 						vertices   	(list Points
 						    (596, 464)
 						    (730, 464))
@@ -3827,7 +4570,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object NoteView @155
+			    (object NoteView @161
 				location   	(672, 304)
 				font       	(object Font
 				    size       	9
@@ -3839,7 +4582,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@155
+				    Parent_View 	@161
 				    location   	(28, 19)
 				    fill_color 	13434879
 				    nlines     	13
@@ -3863,7 +4606,7 @@
 				fill_color 	13434879
 				width      	1313
 				height     	582)
-			    (object NoteView @156
+			    (object NoteView @162
 				location   	(1696, 160)
 				font       	(object Font
 				    size       	9
@@ -3875,7 +4618,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@156
+				    Parent_View 	@162
 				    location   	(1358, 29)
 				    fill_color 	13434879
 				    nlines     	5
@@ -3911,7 +4654,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object NoteView @157
+			    (object NoteView @163
 				location   	(576, 256)
 				font       	(object Font
 				    size       	9
@@ -3923,7 +4666,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@157
+				    Parent_View 	@163
 				    location   	(44, 31)
 				    fill_color 	13434879
 				    nlines     	9
@@ -3943,7 +4686,7 @@
 				fill_color 	13434879
 				width      	1088
 				height     	463)
-			    (object NoteView @158
+			    (object NoteView @164
 				location   	(1520, 176)
 				font       	(object Font
 				    size       	9
@@ -3955,7 +4698,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@158
+				    Parent_View 	@164
 				    location   	(1182, 45)
 				    fill_color 	13434879
 				    nlines     	5
@@ -3993,7 +4736,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object NoteView @159
+		    (object NoteView @165
 			location   	(768, 384)
 			font       	(object Font
 			    size       	9
@@ -4005,7 +4748,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@159
+			    Parent_View 	@165
 			    location   	(121, 96)
 			    fill_color 	13434879
 			    nlines     	14
@@ -4065,7 +4808,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object NoteView @160
+			    (object NoteView @166
 				location   	(624, 160)
 				font       	(object Font
 				    size       	9
@@ -4077,7 +4820,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@160
+				    Parent_View 	@166
 				    location   	(21, 26)
 				    fill_color 	13434879
 				    nlines     	5
@@ -4104,7 +4847,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object SubSysView "Component View::Implementation Model" @161
+		    (object SubSysView "Component View::Implementation Model" @167
 			location   	(736, 800)
 			font       	(object Font
 			    size       	9
@@ -4116,7 +4859,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@161
+			    Parent_View 	@167
 			    location   	(552, 713)
 			    fill_color 	13434879
 			    nlines     	2
@@ -4179,7 +4922,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object ProcessorView "<processor name>" @162
+		    (object ProcessorView "<processor name>" @168
 			location   	(512, 1056)
 			font       	(object Font
 			    size       	9
@@ -4191,7 +4934,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@162
+			    Parent_View 	@168
 			    location   	(276, 900)
 			    nlines     	2
 			    max_width  	400
@@ -4202,7 +4945,7 @@
 			width      	475
 			height     	381
 			annotation 	3)
-		    (object DeviceView "<device name>" @163
+		    (object DeviceView "<device name>" @169
 			location   	(1040, 1056)
 			font       	(object Font
 			    size       	9
@@ -4214,7 +4957,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@163
+			    Parent_View 	@169
 			    location   	(867, 950)
 			    nlines     	2
 			    max_width  	275
@@ -4225,16 +4968,16 @@
 			width      	350
 			height     	282
 			annotation 	0)
-		    (object ConnectionView "" @164
+		    (object ConnectionView "" @170
 			stereotype 	TRUE
 			quidu      	"34DBBD4B008C"
-			client     	@162
-			supplier   	@163
+			client     	@168
+			supplier   	@169
 			vertices   	(list Points
 			    (718, 1056)
 			    (865, 1056))
 			line_style 	0)
-		    (object NoteView @165
+		    (object NoteView @171
 			location   	(816, 304)
 			font       	(object Font
 			    size       	9
@@ -4246,7 +4989,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@165
+			    Parent_View 	@171
 			    location   	(38, 29)
 			    fill_color 	13434879
 			    nlines     	11
@@ -7655,7 +8398,7 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"ClassPath"
-			value      	";C:\\Program Files (x86)\\Java\\jdk1.8.0_161\\jre\\lib\\rt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_161\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_161\\lib\\tools.jar")
+			value      	"C:\\Program Files (x86)\\IBM\\RationalSDLC\\ClearQuest\\cqjni.jar;C:\\LINGO64_17\\Lingo17.jar")
 		    (object Attribute
 			tool       	"Java"
 			name       	"EditorType"
